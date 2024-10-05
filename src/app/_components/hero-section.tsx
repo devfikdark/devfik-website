@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const words = ["Shape The Future", "Drive Innovation", "Empower Your Business", "Simplify Complexity"];
 
-const HeroSection = () => {
+export function HeroSection() {
   return (
     <div className="container pt-20 lg:pt-0 min-h-screen lg:min-h-[70vh] grid grid-cols-1 lg:grid-cols-3 items-center lg:justify-between">
       <div className="lg:col-span-2">
@@ -27,6 +27,4 @@ const HeroSection = () => {
       </div>
     </div>
   );
-};
-
-export default HeroSection;
+}

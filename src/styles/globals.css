@@ -10,6 +10,9 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .text-foreground-normal {
+    color: #f1f7fe;
+  }
 }
 
 @layer base {

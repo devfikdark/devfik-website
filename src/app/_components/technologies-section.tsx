@@ -31,13 +31,13 @@ const Technologies = [
   "ContextAPI",
 ];
 
-export default function TechnologiesSection() {
+export function TechnologiesSection() {
   return (
     <div className="mt-24 py-2 bg-card">
       <Marquee pauseOnHover className="[--duration:35s]">
         {Technologies.map((el, index) => (
           <Fragment key={index}>
-            <span className="text-lg">{el}</span>
+            <span className="text-lg text-foreground-normal">{el}</span>
             <Dot className="text-primary" />
           </Fragment>
         ))}
