@@ -38,7 +38,7 @@ body {
 
   .dark {
     --background: 0 5.26% 3.73%;
-    --foreground: 36 25% 97%;
+    --foreground: 0 0% 60%;
     --muted: 216 33% 9%;
     --muted-foreground: 216 5% 71%;
     --popover: 36 31% 2%;
