@@ -8,7 +8,7 @@ interface HeadingProps {
   className?: string;
 }
 
-const Heading = ({ children, className }: HeadingProps) => {
+export function Heading({ children, className }: HeadingProps) {
   return (
     <div
       className={cn(
@@ -19,6 +19,4 @@ const Heading = ({ children, className }: HeadingProps) => {
       {children}
     </div>
   );
-};
-
-export default Heading;
+}

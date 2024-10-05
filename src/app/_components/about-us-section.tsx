@@ -1,18 +1,18 @@
 import Image from "next/image";
 
 import { BlurFade } from "@/components/blur-fade";
-import Heading from "@/components/ui/heading";
+import { Heading } from "@/components/ui/heading";
 import aboutUs from "@/assets/images/about-us.png";
 
 export function AboutUsSection() {
   return (
-    <section className="container mt-40 lg:mt-60">
+    <section className="container mt-40 lg:mt-72">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:justify-between">
         <div className="flex flex-col justify-center">
-          <BlurFade inView delay={0.25} yOffset={10}>
-            <Heading className="text-6xl">About Us</Heading>
+          <BlurFade delay={0.25} yOffset={10}>
+            <Heading className="text-6xl">About us</Heading>
           </BlurFade>
-          <BlurFade inView delay={0.5} yOffset={10}>
+          <BlurFade delay={0.5} yOffset={10}>
             <p className="text-xl mt-6 tracking-wide">
               At Devfik, we build <span className="text-foreground-normal">bespoke digital solutions</span> that elevate
               your business. From <span className="text-foreground-normal">sleek websites</span> to powerful custom
@@ -23,7 +23,7 @@ export function AboutUsSection() {
           </BlurFade>
         </div>
         <div className="flex justify-center lg:justify-end">
-          <BlurFade inView delay={1} yOffset={10}>
+          <BlurFade delay={1} yOffset={10}>
             <Image alt="about-us" className="max-w-full" height={400} src={aboutUs} width={400} />
           </BlurFade>
         </div>

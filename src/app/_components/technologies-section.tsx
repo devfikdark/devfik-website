@@ -34,7 +34,7 @@ const Technologies = [
 
 export function TechnologiesSection() {
   return (
-    <BlurFade inView delay={1} yOffset={10}>
+    <BlurFade delay={1} yOffset={10}>
       <div className="mt-24 py-2 bg-card">
         <Marquee pauseOnHover className="[--duration:35s]">
           {Technologies.map((el, index) => (
