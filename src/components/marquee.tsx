@@ -10,7 +10,16 @@ interface MarqueeProps {
   [key: string]: any;
 }
 
-export default function Marquee({ className, reverse, pauseOnHover = false, children, vertical = false, repeat = 4, ...props }: MarqueeProps) {
+/* eslint-disable */
+export default function Marquee({
+  className,
+  reverse,
+  pauseOnHover = false,
+  children,
+  vertical = false,
+  repeat = 4,
+  ...props
+}: MarqueeProps) {
   return (
     <div
       {...props}
@@ -20,7 +29,7 @@ export default function Marquee({ className, reverse, pauseOnHover = false, chil
           "flex-row": !vertical,
           "flex-col": vertical,
         },
-        className
+        className,
       )}>
       {Array(repeat)
         .fill(0)

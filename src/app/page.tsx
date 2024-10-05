@@ -1,3 +1,4 @@
+import { AboutUsSection } from "./_components/about-us-section";
 import { HeroSection } from "./_components/hero-section";
 import { TechnologiesSection } from "./_components/technologies-section";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <HeroSection />
       <TechnologiesSection />
+      <AboutUsSection />
     </>
   );
 }

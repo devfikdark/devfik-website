@@ -1,5 +1,6 @@
-import { satoshi } from "@/assets/fonts";
 import type { Metadata } from "next";
+
+import { satoshi } from "@/assets/fonts";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
