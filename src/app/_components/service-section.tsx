@@ -1,13 +1,37 @@
+import { BlurFade } from "@/components/blur-fade";
+import { Card } from "@/components/ui/card";
 import { Heading } from "@/components/ui/heading";
-import React from "react";
+import { Services } from "@/lib/data";
 
 export function ServiceSection() {
   return (
-    <section className="container  mt-40 lg:mt-72">
+    <section className="container mt-40 lg:mt-72">
       <Heading className="text-center text-6xl">Services we provide</Heading>
       <p className="text-center text-lg mt-4 tracking-wide">
         We provide the best solution for your next business needs. You name it we have it
       </p>
+
+      <div className="max-w-6xl mx-auto mt-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {Services.map((service, index) => (
+            <BlurFade key={index} delay={0.25 + index * 0.02} yOffset={10}>
+              <Card className="p-4 transition-shadow duration-300 flex flex-col h-full group">
+                <div className="relative h-48 mb-4 overflow-hidden">
+                  <picture>
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="rounded-lg w-full h-full object-cover transition-all duration-500 filter grayscale group-hover:filter-none group-hover:scale-110"
+                    />
+                  </picture>
+                </div>
+                <h3 className="text-2xl font-bold mb-3 text-foreground-normal">{service.title}</h3>
+                <p className="text-lg flex-grow">{service.description}</p>
+              </Card>
+            </BlurFade>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }

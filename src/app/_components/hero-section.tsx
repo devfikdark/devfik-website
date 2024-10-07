@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-import wavy from "@/assets/images/wavy.svg";
 import { BlurFade } from "@/components/blur-fade";
 import { DotPattern } from "@/components/dot-patterns";
 import { FlipWords } from "@/components/flip-word";
@@ -34,7 +33,7 @@ export function HeroSection() {
 
       <div className="flex justify-center lg:justify-start">
         <BlurFade delay={1} yOffset={10}>
-          <Image alt="wavy" className="max-w-full h-auto" height={500} src={wavy} width={500} />
+          <Image alt="wavy" className="max-w-full h-auto" height={500} src="/images/wavy.svg" width={500} />
         </BlurFade>
       </div>
 

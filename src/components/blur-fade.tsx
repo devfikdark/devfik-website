@@ -40,9 +40,9 @@ export function BlurFade({
       whileInView="visible"
       viewport={{ once: true, amount: 0.8 }}
       transition={{
-        delay: 0.04 + delay,
+        delay: 0.02 + delay,
         duration,
-        ease: "easeOut",
+        ease: "easeInOut",
       }}
       variants={combinedVariants}>
       {children}

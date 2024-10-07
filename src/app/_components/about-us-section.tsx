@@ -2,7 +2,6 @@ import Image from "next/image";
 
 import { BlurFade } from "@/components/blur-fade";
 import { Heading } from "@/components/ui/heading";
-import aboutUs from "@/assets/images/about-us.png";
 
 export function AboutUsSection() {
   return (
@@ -24,7 +23,7 @@ export function AboutUsSection() {
         </div>
         <div className="flex justify-center lg:justify-end">
           <BlurFade delay={1} yOffset={10}>
-            <Image alt="about-us" className="max-w-full" height={400} src={aboutUs} width={400} />
+            <Image alt="about-us" className="max-w-full" height={400} src="/images/about-us.png" width={400} />
           </BlurFade>
         </div>
       </div>
