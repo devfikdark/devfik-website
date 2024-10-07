@@ -38,7 +38,7 @@ export function BlurFade({
       className={className}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.8 }}
+      viewport={{ once: true, amount: 0.3 }}
       transition={{
         delay: 0.02 + delay,
         duration,

@@ -3,6 +3,8 @@ import { HeroSection } from "./_components/hero-section";
 import { Stats } from "./_components/stats";
 import { TechnologiesSection } from "./_components/technologies-section";
 import { ServiceSection } from "./_components/service-section";
+import { AutoText } from "./_components/auto-text";
+
 export default function Home() {
   return (
     <>
@@ -11,6 +13,7 @@ export default function Home() {
       <AboutUsSection />
       <Stats />
       <ServiceSection />
+      <AutoText />
     </>
   );
 }
