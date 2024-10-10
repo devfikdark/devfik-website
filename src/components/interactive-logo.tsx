@@ -49,7 +49,7 @@ export default function InteractiveOrangeParticleDevfik() {
 
       const yPosition = canvas.height / 2;
 
-      ctx.fillText("Devfik", canvas.width / 2, yPosition);
+      ctx.fillText("devfik", canvas.width / 2, yPosition);
 
       textImageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
       ctx.clearRect(0, 0, canvas.width, canvas.height);

@@ -108,6 +108,6 @@ export const Testimonials = [
     name: "Wassim Taher",
     position: "CEO of CreativeDigit",
     image: "/images/clients-image/Wassim_Taher.jpeg",
-    description: "CEO of CreativeDigit",
+    description: "Excellent work. Thanks a lot!",
   },
 ];
