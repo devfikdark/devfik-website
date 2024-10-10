@@ -2,7 +2,7 @@
 const nextConfig = {
   // output: "export",
   images: {
-    domains: ['dtj79c1o8b5yh.cloudfront.net'],
+    domains: ["dtj79c1o8b5yh.cloudfront.net"],
   },
 };
 

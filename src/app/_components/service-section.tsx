@@ -1,16 +1,17 @@
 import { BlurFade } from "@/components/blur-fade";
 import { MagicCard } from "@/components/magic-card";
-import { Card } from "@/components/ui/card";
 import { Heading } from "@/components/ui/heading";
 import { Services } from "@/lib/data";
 
 export function ServiceSection() {
   return (
     <section className="container max-w-6xl mx-auto mt-40 lg:mt-72">
-      <Heading className="text-center text-4xl md:text-6xl">Services we provide</Heading>
-      <p className="text-center text-lg mt-4 tracking-wide">
-        We provide the best solution for your next business needs. You name it we have it
-      </p>
+      <BlurFade delay={0.25} yOffset={10}>
+        <Heading className="text-center text-4xl md:text-6xl">Services we provide</Heading>
+        <p className="text-center text-lg mt-4 tracking-wide">
+          We provide the best solution for your next business needs. You name it we have it
+        </p>
+      </BlurFade>
 
       <div className="mt-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
