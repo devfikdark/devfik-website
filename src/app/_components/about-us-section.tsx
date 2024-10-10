@@ -9,7 +9,7 @@ export function AboutUsSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:justify-between">
         <div className="flex flex-col justify-center">
           <BlurFade delay={0.25} yOffset={10}>
-            <Heading className="text-6xl">About us</Heading>
+            <Heading className="text-4xl md:text-6xl">About us</Heading>
           </BlurFade>
           <BlurFade delay={0.5} yOffset={10}>
             <p className="text-xl mt-6 tracking-wide">

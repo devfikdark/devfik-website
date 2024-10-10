@@ -6,6 +6,8 @@ import { ServiceSection } from "./_components/service-section";
 import { AutoText } from "./_components/auto-text";
 import { HowWeWork } from "./_components/how-we-work";
 import { OurClients } from "./_components/our-clients";
+import { Testimonial } from "./_components/testimonial";
+
 export default function Home() {
   return (
     <>
@@ -17,6 +19,7 @@ export default function Home() {
       <AutoText />
       <HowWeWork />
       <OurClients />
+      <Testimonial />
     </>
   );
 }

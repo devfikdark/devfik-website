@@ -3,7 +3,10 @@ import { Heading } from "@/components/ui/heading";
 export function OurClients() {
   return (
     <section className="container max-w-6xl mx-auto mt-40 lg:mt-72">
-      <Heading className="text-center text-6xl">Partners we worked with</Heading>
+      <Heading className="text-center text-4xl md:text-6xl">Partners we worked with</Heading>
+      <p className="text-center text-lg mt-4 tracking-wide">
+        We have worked with a wide range of clients, from startups to large corporations.
+      </p>
       <div className="mt-20">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center justify-items-center">
           {[1, 2, 3, 4, 5, 6, 7].map((index) => (
@@ -12,7 +15,7 @@ export function OurClients() {
               className="group relative overflow-hidden rounded-lg transition-transform duration-300 hover:scale-105">
               <picture>
                 <img
-                  src={`/images/clients/${index}.png`}
+                  src={`/images/clients-logo/${index}.png`}
                   alt={`client-${index}`}
                   width={100}
                   height={100}
