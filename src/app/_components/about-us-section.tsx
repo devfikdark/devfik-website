@@ -5,7 +5,7 @@ import { Heading } from "@/components/ui/heading";
 
 export function AboutUsSection() {
   return (
-    <section className="container mt-40 lg:mt-72">
+    <section className="container max-w-6xl mx-auto mt-40 lg:mt-72">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:justify-between">
         <div className="flex flex-col justify-center">
           <BlurFade delay={0.25} yOffset={10}>

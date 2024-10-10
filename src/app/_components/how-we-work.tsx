@@ -3,7 +3,7 @@ import { Heading } from "@/components/ui/heading";
 export function HowWeWork() {
   return (
     <section className="container mt-40 lg:mt-72">
-      <div className="px-4 py-10 lg:px-8 lg:py-14">
+      <div className="px-4 lg:px-14">
         <div className="relative p-6 md:p-16">
           <div className="relative z-10 lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center">
             <div className="mb-10 lg:mb-0 lg:col-span-6 lg:order-2">

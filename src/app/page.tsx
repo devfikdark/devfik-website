@@ -5,7 +5,7 @@ import { TechnologiesSection } from "./_components/technologies-section";
 import { ServiceSection } from "./_components/service-section";
 import { AutoText } from "./_components/auto-text";
 import { HowWeWork } from "./_components/how-we-work";
-
+import { OurClients } from "./_components/our-clients";
 export default function Home() {
   return (
     <>
@@ -16,6 +16,7 @@ export default function Home() {
       <ServiceSection />
       <AutoText />
       <HowWeWork />
+      <OurClients />
     </>
   );
 }

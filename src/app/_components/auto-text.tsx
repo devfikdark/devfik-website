@@ -3,7 +3,7 @@ import React from "react";
 
 export function AutoText() {
   return (
-    <section className="container mt-40 lg:mt-60">
+    <section className="container max-w-6xl mx-auto mt-40 lg:mt-60">
       <TextGenerateEffect
         duration={2}
         filter={false}
