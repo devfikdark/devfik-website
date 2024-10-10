@@ -7,6 +7,7 @@ import { AutoText } from "./_components/auto-text";
 import { HowWeWork } from "./_components/how-we-work";
 import { OurClients } from "./_components/our-clients";
 import { Testimonial } from "./_components/testimonial";
+import { ContactUsCard } from "@/components/contact-us-card";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <HowWeWork />
       <OurClients />
       <Testimonial />
+      <ContactUsCard />
     </>
   );
 }
