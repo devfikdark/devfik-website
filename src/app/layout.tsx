@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 
 import { satoshi } from "@/assets/fonts";
-import "@/styles/globals.css";
 import { Footer } from "@/components/footer";
+import { Header } from "@/components/header";
+import "@/styles/globals.css";
 
 export const metadata: Metadata = {
   title: "Devfik",
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${satoshi.className} overflow-x-hidden tracking-wide antialiased dark`}>
+        <Header />
         {children}
         <Footer />
       </body>
