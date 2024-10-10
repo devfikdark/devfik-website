@@ -87,7 +87,7 @@ export const Testimonials = [
   {
     name: "Sebastian Skalski",
     position: "CEO of Maximus",
-    image: "/images/clients-image/Sebastian_Skalski.jpeg",
+    image: "/images/clients-image/Sebastian_Skalski.png",
     description: "Awesome work! Highly recommened. We keep working together.",
   },
   {
@@ -100,7 +100,7 @@ export const Testimonials = [
   {
     name: "James Mclauchlan",
     position: "Co-founder of Jamber Team Building Pte Ltd.",
-    image: "/images/clients-image/James_McLauchlan.jpg",
+    image: "/images/clients-image/James_McLauchlan.png",
     description:
       "A quick consultation on what kind of tools and framework to use for a possible web app. He was knowledgeable and it was a very worthwhile conversation.",
   },

@@ -9,7 +9,7 @@ export function AboutUsSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:justify-between">
         <div className="flex flex-col justify-center">
           <BlurFade delay={0.25} yOffset={10}>
-            <Heading className="text-4xl md:text-6xl">About us</Heading>
+            <Heading className="text-center md:text-left text-4xl md:text-6xl">About us</Heading>
           </BlurFade>
           <BlurFade delay={0.5} yOffset={10}>
             <p className="text-xl mt-6 tracking-wide">
@@ -22,7 +22,7 @@ export function AboutUsSection() {
           </BlurFade>
         </div>
         <div className="flex justify-center lg:justify-end">
-          <BlurFade delay={1} yOffset={10}>
+          <BlurFade delay={0.5} yOffset={10}>
             <Image alt="about-us" className="max-w-full" height={400} src="/images/about-us.png" width={400} />
           </BlurFade>
         </div>

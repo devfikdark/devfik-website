@@ -11,7 +11,7 @@ export function Stats() {
           <div className="flex flex-row md:flex-col gap-4 md:gap-2 justify-start md:justify-center items-center">
             <p
               className={cn(
-                "whitespace-pre-wrap text-7xl md:text-8xl font-bold tracking-tighter text-foreground-normal",
+                "whitespace-pre-wrap text-5xl md:text-8xl font-bold tracking-tighter text-foreground-normal",
                 gambetta.className,
               )}>
               <NumberTicker value={80} />+
@@ -23,7 +23,7 @@ export function Stats() {
           <div className="flex flex-row md:flex-col gap-4 md:gap-2 justify-start md:justify-center items-center">
             <p
               className={cn(
-                "whitespace-pre-wrap text-7xl md:text-8xl font-bold tracking-tighter text-foreground-normal",
+                "whitespace-pre-wrap text-5xl md:text-8xl font-bold tracking-tighter text-foreground-normal",
                 gambetta.className,
               )}>
               <NumberTicker value={40} />+
@@ -35,7 +35,7 @@ export function Stats() {
           <div className="flex flex-row md:flex-col gap-4 md:gap-2 justify-start md:justify-center items-center">
             <p
               className={cn(
-                "whitespace-pre-wrap text-7xl md:text-8xl font-bold tracking-tighter text-foreground-normal",
+                "whitespace-pre-wrap text-5xl md:text-8xl font-bold tracking-tighter text-foreground-normal",
                 gambetta.className,
               )}>
               <NumberTicker value={4} />+

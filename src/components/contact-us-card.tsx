@@ -6,10 +6,12 @@ import { Heading } from "./ui/heading";
 export function ContactUsCard() {
   return (
     <section className="container max-w-6xl mx-auto mt-40 lg:mt-72">
-      <div className="p-16 rounded-2xl bg-card relative overflow-hidden">
+      <div className="p-20 rounded-2xl bg-card relative overflow-hidden">
         <div className="relative z-10">
-          <Heading className="text-6xl text-center">Let&apos;s Build Something Extraordinary Together</Heading>
-          <div className="mt-8 flex justify-center gap-4">
+          <Heading className="text-4xl md:text-6xl text-center break-words">
+            Let&apos;s Build Something Extraordinary Together
+          </Heading>
+          <div className="mt-8 flex justify-center gap-3">
             <Button>Contact Us</Button>
             <Button variant="secondary">Schedule a meeting</Button>
           </div>

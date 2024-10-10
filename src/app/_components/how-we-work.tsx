@@ -9,9 +9,11 @@ export function HowWeWork() {
           <div className="relative p-6 md:p-16">
             <div className="relative z-10 lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center">
               <div className="mb-10 lg:mb-0 lg:col-span-6 lg:order-2">
-                <Heading className="text-4xl font-bold">
-                  We ship <span className="italic">fast</span> and we ship <span className="italic">right</span>
-                </Heading>
+                <BlurFade delay={0.5} yOffset={10}>
+                  <Heading className="text-4xl font-bold">
+                    We ship <span className="italic">fast</span> and we ship <span className="italic">right</span>
+                  </Heading>
+                </BlurFade>
 
                 <nav className="grid gap-4 mt-5 md:mt-10" aria-label="Tabs" role="tablist" aria-orientation="vertical">
                   <div className={`text-start group focus:outline-none hover:bg-background p-4 md:p-5 rounded-2xl`}>

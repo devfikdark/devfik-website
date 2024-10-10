@@ -14,14 +14,14 @@ export function HeroSection() {
     <div className="container pt-20 lg:pt-0 min-h-screen lg:min-h-[70vh] grid grid-cols-1 lg:grid-cols-3 items-center lg:justify-between relative">
       <div className="lg:col-span-2">
         <BlurFade delay={0.25} yOffset={10}>
-          <Heading className="text-6xl font-bold">
+          <Heading className="text-3xl md:text-6xl font-bold">
             Creating Digital Solutions <br /> That
             <FlipWords words={words} />
           </Heading>
         </BlurFade>
 
         <BlurFade delay={0.5} yOffset={10}>
-          <p className="text-xl font-normal mt-4">Innovative solutions, tailored for your success</p>
+          <p className="text-md md:text-xl font-normal mt-4">Innovative solutions, tailored for your success</p>
         </BlurFade>
 
         <BlurFade delay={0.75} yOffset={10}>
