@@ -1,19 +1,17 @@
-import Image from "next/image";
-
 import { BlurFade } from "@/components/blur-fade";
 import { DotPattern } from "@/components/dot-patterns";
 import { FlipWords } from "@/components/flip-word";
+import InteractiveOrangeParticleDevfik from "@/components/interactive-logo";
 import { Button } from "@/components/ui/button";
 import { Heading } from "@/components/ui/heading";
 import { cn } from "@/lib/utils";
-import InteractiveOrangeParticleDevfik from "@/components/interactive-logo";
 
 const words = ["Shape The Future", "Drive Innovation", "Empower Business", "Simplify Complexity"];
 
 export function HeroSection() {
   return (
     <div className="relative min-h-screen overflow-hidden bg-gradient-to-b from-background to-background/80">
-      <div className="container pt-20 lg:pt-0 min-h-screen lg:min-h-[80vh] flex flex-col lg:flex-row items-center justify-between relative z-10">
+      <div className="container pt-20 lg:pt-0 min-h-screen flex flex-col-reverse lg:flex-row items-center justify-between relative z-10">
         <div className="w-full lg:w-1/2 z-10 mb-8 lg:mb-0">
           <BlurFade delay={0.25} yOffset={10}>
             <Heading className="text-4xl md:text-5xl font-bold">
@@ -29,7 +27,7 @@ export function HeroSection() {
           </BlurFade>
 
           <BlurFade delay={0.75} yOffset={10}>
-            <Button className="mt-8 text-md" size="lg">
+            <Button className="mt-8 text-sm" size="lg">
               Get In Touch
             </Button>
           </BlurFade>

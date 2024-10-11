@@ -1,6 +1,6 @@
-import { gambetta } from "@/assets/fonts";
 import { BlurFade } from "@/components/blur-fade";
 import NumberTicker from "@/components/ui/number-ticker";
+import { gambetta } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 
 export function Stats() {

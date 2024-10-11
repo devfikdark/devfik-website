@@ -35,7 +35,7 @@ export function AboutUsSection() {
                 width={500}
                 objectFit="cover"
               />
-              <div className="absolute -bottom-6 -left-6 bg-primary/90 text-foreground-normal p-4 rounded-lg shadow-lg">
+              <div className="absolute -bottom-6 -left-6 bg-primary text-foreground-normal p-4 rounded-lg shadow-lg">
                 <p className="font-bold text-2xl">98%</p>
                 <p className="text-sm">Client Satisfaction</p>
               </div>

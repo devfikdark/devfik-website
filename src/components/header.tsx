@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { cn } from "@/lib/utils";
+import { gambetta } from "@/lib/fonts";
 
 export function Header() {
   const [isVisible, setIsVisible] = useState(true);
@@ -32,6 +34,27 @@ export function Header() {
     { href: "/contact-us", label: "Contact Us" },
   ];
 
+  const menuVariants = {
+    hidden: { opacity: 0, y: "-100%" },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.3,
+        ease: "easeInOut",
+        when: "beforeChildren",
+        staggerChildren: 0.1,
+      },
+    },
+    exit: { opacity: 0, y: "-100%", transition: { duration: 0.3, ease: "easeInOut" } },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+    exit: { opacity: 0, y: 20, transition: { duration: 0.3 } },
+  };
+
   return (
     <>
       <motion.header
@@ -42,7 +65,7 @@ export function Header() {
         <div className="max-w-4xl w-full px-4">
           <div className="flex items-center justify-between h-14">
             <div className="flex-shrink-0">
-              <Link href="/">
+              <Link href="/" className="text-primary font-bold text-xl">
                 {/* <Image src="/logo.png" alt="Logo" width={120} height={40} /> */}
                 devfik
               </Link>
@@ -51,7 +74,9 @@ export function Header() {
               <ul className="flex space-x-6">
                 {menuItems.map((item) => (
                   <li key={item.href}>
-                    <Link href={item.href} className="text-foreground hover:text-foreground-normal lowercase">
+                    <Link
+                      href={item.href}
+                      className={cn("text-foreground hover:text-foreground-normal lowercase", gambetta.className)}>
                       {item.label}
                     </Link>
                   </li>
@@ -59,7 +84,7 @@ export function Header() {
               </ul>
             </nav>
             <button
-              className="md:hidden text-foreground hover:text-foreground-normal h-full"
+              className={cn("md:hidden text-foreground hover:text-foreground-normal h-full", gambetta.className)}
               onClick={() => setIsMenuOpen(true)}>
               Menu
             </button>
@@ -71,39 +96,34 @@ export function Header() {
         {isMenuOpen && (
           <motion.div
             className="fixed inset-0 bg-primary z-50 flex flex-col"
-            initial={{ opacity: 0, y: "-100%" }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: "-100%" }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}>
+            variants={menuVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit">
             <div className="flex justify-between items-center p-4">
               <div className="flex-shrink-0">
-                <Link href="/" onClick={() => setIsMenuOpen(false)}>
+                <Link href="/" className="text-foreground-normal text-xl" onClick={() => setIsMenuOpen(false)}>
                   {/* <Image src="/logo.png" alt="Logo" width={120} height={40} /> */}
                   devfik
                 </Link>
               </div>
-              <button className="text-foreground-normal" onClick={() => setIsMenuOpen(false)}>
+              <button className={cn("text-foreground-normal", gambetta.className)} onClick={() => setIsMenuOpen(false)}>
                 Close
               </button>
             </div>
             <nav className="flex-grow flex items-center justify-center">
-              <ul className="space-y-6 text-center">
+              <motion.ul className="space-y-6 text-center">
                 {menuItems.map((item) => (
-                  <motion.li
-                    key={item.href}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 20 }}
-                    transition={{ duration: 0.3, delay: 0.1 }}>
+                  <motion.li key={item.href} variants={itemVariants}>
                     <Link
                       href={item.href}
-                      className="text-2xl text-foreground-normal lowercase w-full"
+                      className={cn("text-2xl text-foreground-normal lowercase w-full", gambetta.className)}
                       onClick={() => setIsMenuOpen(false)}>
                       {item.label}
                     </Link>
                   </motion.li>
                 ))}
-              </ul>
+              </motion.ul>
             </nav>
           </motion.div>
         )}

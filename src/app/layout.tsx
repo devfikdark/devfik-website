@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
-import { satoshi } from "@/assets/fonts";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { satoshi } from "@/lib/fonts";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {

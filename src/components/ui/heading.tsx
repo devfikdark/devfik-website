@@ -1,7 +1,7 @@
 import React from "react";
 
-import { gambetta } from "@/assets/fonts";
 import { cn } from "@/lib/utils";
+import { gambetta } from "@/lib/fonts";
 
 interface HeadingProps {
   children: React.ReactNode;
