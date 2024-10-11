@@ -26,14 +26,15 @@ export function AboutUsSection() {
         <div className="flex justify-center lg:justify-end">
           <BlurFade delay={0.5} yOffset={10}>
             <div className="relative">
-              <Image
-                alt="about-us"
-                className="rounded-2xl shadow-2xl"
-                height={500}
-                objectFit="cover"
-                src="/images/about-us.png"
-                width={500}
-              />
+              <picture>
+                <img
+                  alt="about-us"
+                  className="rounded-2xl shadow-2xl object-cover"
+                  height={500}
+                  src="/images/about-us.png"
+                  width={500}
+                />
+              </picture>
               <div className="absolute -bottom-6 -left-6 bg-primary text-foreground-normal p-4 rounded-lg shadow-lg">
                 <p className="font-bold text-2xl">98%</p>
                 <p className="text-sm">Client Satisfaction</p>
