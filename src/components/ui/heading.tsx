@@ -12,7 +12,7 @@ export function Heading({ children, className }: HeadingProps) {
   return (
     <div
       className={cn(
-        "text-3xl font-bold tracking-wide bg-gradient-to-b from-white to-card-foreground text-transparent bg-clip-text leading-normal pb-2",
+        "text-3xl font-bold tracking-wide bg-gradient-to-b from-white/90 to-card-foreground/50 text-transparent bg-clip-text leading-normal pb-2",
         gambetta.className,
         className,
       )}>

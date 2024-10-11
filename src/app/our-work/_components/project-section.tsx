@@ -27,8 +27,8 @@ export function ProjectSection() {
               </div>
               <div className="w-full md:flex-1">
                 <h1 className="text-2xl md:text-3xl font-medium text-foreground-normal mb-4">{project.title}</h1>
-                <p className="text-base md:text-xl">{project.description}</p>
-                <Button className="mt-12 group/button" variant="outline">
+                <p className="text-lg">{project.description}</p>
+                <Button className="mt-12 group/button" variant="secondary">
                   Learn More
                   <MoveRight className="size-4 ml-2 transition-transform duration-300 ease-in-out group-hover/button:translate-x-1" />
                 </Button>

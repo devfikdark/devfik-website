@@ -5,7 +5,7 @@ export function Footer() {
         <div className="flex mb-20">
           <div>
             <h2 className="text-primary text-3xl font-bold">devfik</h2>
-            <p>Innovating tomorrow, building today</p>
+            <p className="mt-4">Innovating tomorrow, building today</p>
           </div>
 
           <div className="ml-auto flex gap-2">
