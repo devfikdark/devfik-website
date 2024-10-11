@@ -15,20 +15,20 @@ export function HowWeWork() {
                   </Heading>
                 </BlurFade>
 
-                <nav className="grid gap-4 mt-5 md:mt-10" aria-label="Tabs" role="tablist" aria-orientation="vertical">
+                <nav aria-label="Tabs" aria-orientation="vertical" className="grid gap-4 mt-5 md:mt-10" role="tablist">
                   <div className={`text-start group focus:outline-none hover:bg-background p-4 md:p-5 rounded-2xl`}>
                     <span className="flex gap-x-6">
                       <svg
                         className="shrink-0 mt-2 size-6 md:size-7 text-foreground-normal group-hover:text-primary"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
                         fill="none"
+                        height="24"
                         stroke="currentColor"
-                        strokeWidth="2"
                         strokeLinecap="round"
-                        strokeLinejoin="round">
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" />
                         <path d="m7 16.5-4.74-2.85" />
                         <path d="m7 16.5 5-3" />
@@ -58,16 +58,16 @@ export function HowWeWork() {
                     <span className="flex gap-x-6">
                       <svg
                         className="shrink-0 mt-2 size-6 md:size-7 text-foreground-normal group-hover:text-primary"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
                         fill="none"
+                        height="24"
                         stroke="currentColor"
-                        strokeWidth="2"
                         strokeLinecap="round"
-                        strokeLinejoin="round">
-                        <rect width="18" height="18" x="3" y="3" rx="2" />
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect height="18" rx="2" width="18" x="3" y="3" />
                         <path d="M9 8h7" />
                         <path d="M8 12h6" />
                         <path d="M11 16h5" />
@@ -88,15 +88,15 @@ export function HowWeWork() {
                     <span className="flex gap-x-6">
                       <svg
                         className="shrink-0 mt-2 size-6 md:size-7 text-foreground-normal group-hover:text-primary"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
                         fill="none"
+                        height="24"
                         stroke="currentColor"
-                        strokeWidth="2"
                         strokeLinecap="round"
-                        strokeLinejoin="round">
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path d="M22 11v1a10 10 0 1 1-9-10" />
                         <path d="M8 14s1.5 2 4 2 4-2 4-2" />
                         <line x1="9" x2="9.01" y1="9" y2="9" />
@@ -124,11 +124,11 @@ export function HowWeWork() {
                   <div>
                     <picture>
                       <img
+                        alt="Advanced tools"
                         className="shadow-xl rounded-xl shadow-gray-900/20"
-                        width={500}
                         height={500}
                         src="https://images.unsplash.com/photo-1598929213452-52d72f63e307?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&h=720&q=80"
-                        alt="Advanced tools"
+                        width={500}
                       />
                     </picture>
                   </div>
@@ -136,28 +136,28 @@ export function HowWeWork() {
                   <div className="hidden absolute top-0 end-0 translate-x-16 md:block lg:translate-x-16">
                     <svg
                       className="w-16 h-auto text-primary"
-                      width="121"
+                      fill="none"
                       height="135"
                       viewBox="0 0 121 135"
-                      fill="none"
+                      width="121"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M5 16.4754C11.7688 27.4499 21.2452 57.3224 5 89.0164"
                         stroke="currentColor"
-                        strokeWidth="10"
                         strokeLinecap="round"
+                        strokeWidth="10"
                       />
                       <path
                         d="M33.6761 112.104C44.6984 98.1239 74.2618 57.6776 83.4821 5"
                         stroke="currentColor"
-                        strokeWidth="10"
                         strokeLinecap="round"
+                        strokeWidth="10"
                       />
                       <path
                         d="M50.5525 130C68.2064 127.495 110.731 117.541 116 78.0874"
                         stroke="currentColor"
-                        strokeWidth="10"
                         strokeLinecap="round"
+                        strokeWidth="10"
                       />
                     </svg>
                   </div>
@@ -166,7 +166,7 @@ export function HowWeWork() {
             </div>
 
             <div className="absolute inset-0 grid grid-cols-12 size-full">
-              <div className="col-span-full lg:col-span-7 lg:col-start-6 bg-card w-full h-5/6 rounded-xl sm:h-3/4 lg:h-full"></div>
+              <div className="col-span-full lg:col-span-7 lg:col-start-6 bg-card w-full h-5/6 rounded-xl sm:h-3/4 lg:h-full" />
             </div>
           </div>
         </div>

@@ -14,7 +14,7 @@ export function Testimonial() {
 
       <div className="columns-1 sm:columns-2 lg:columns-3 gap-x-4 lg:gap-x-6 space-y-4 lg:space-y-6 mt-20">
         {Testimonials.map((testimonial, index) => (
-          <BlurFade delay={0.5 + index * 0.02} yOffset={10} key={index}>
+          <BlurFade key={index} delay={0.5 + index * 0.02} yOffset={10}>
             <div className="p-4 break-inside-avoid rounded-xl bg-card">
               <p className="text-foreground-normal">{testimonial.description}</p>
 
@@ -23,11 +23,11 @@ export function Testimonial() {
                   {testimonial.image && (
                     <picture>
                       <img
-                        src={testimonial.image}
                         alt={testimonial.name}
-                        width={40}
-                        height={40}
                         className="rounded-full object-center"
+                        height={40}
+                        src={testimonial.image}
+                        width={40}
                       />
                     </picture>
                   )}

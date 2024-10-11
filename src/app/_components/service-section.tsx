@@ -23,9 +23,9 @@ export function ServiceSection() {
                 <div className="relative h-48 mb-4 overflow-hidden">
                   <picture>
                     <img
-                      src={service.image}
                       alt={service.title}
                       className="rounded-lg w-full h-full object-cover transition-all duration-500 filter grayscale group-hover:filter-none"
+                      src={service.image}
                     />
                   </picture>
                 </div>

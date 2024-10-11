@@ -1,27 +1,30 @@
 "use client";
 
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
+
+/* eslint-disable id-length */
 
 export default function InteractiveOrangeParticleDevfik() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const mousePositionRef = useRef({ x: 0, y: 0 });
   const isTouchingRef = useRef(false);
-  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
   useEffect(() => {
     const canvas = canvasRef.current;
     const container = containerRef.current;
+
     if (!canvas || !container) return;
 
     const ctx = canvas.getContext("2d");
+
     if (!ctx) return;
 
     const updateCanvasSize = () => {
       const { width, height } = container.getBoundingClientRect();
+
       canvas.width = width;
       canvas.height = height;
-      setDimensions({ width, height });
     };
 
     updateCanvasSize();
@@ -45,6 +48,7 @@ export default function InteractiveOrangeParticleDevfik() {
       ctx.textBaseline = "middle";
 
       const fontSize = Math.min(canvas.width / 6, canvas.height / 3);
+
       ctx.font = `bold ${fontSize}px Satoshi, Arial, sans-serif`;
 
       const yPosition = canvas.height / 2;
@@ -67,6 +71,7 @@ export default function InteractiveOrangeParticleDevfik() {
 
         if (data[(y * canvas.width + x) * 4 + 3] > 128) {
           const orange = Math.floor(Math.random() * 30 + 225); // Even brighter orange
+
           return {
             x: x + Math.random() * particleGap - particleGap / 2,
             y: y + Math.random() * particleGap - particleGap / 2,
@@ -85,8 +90,10 @@ export default function InteractiveOrangeParticleDevfik() {
     function createInitialParticles() {
       if (!canvas) return;
       const particleCount = Math.floor((canvas.width * canvas.height) / 200); // Further increased particle density
+
       for (let i = 0; i < particleCount; i++) {
         const particle = createParticle();
+
         if (particle) particles.push(particle);
       }
     }
@@ -111,6 +118,7 @@ export default function InteractiveOrangeParticleDevfik() {
           const angle = Math.atan2(dy, dx);
           const moveX = Math.cos(angle) * force * 30;
           const moveY = Math.sin(angle) * force * 30;
+
           p.x = p.baseX - moveX;
           p.y = p.baseY - moveY;
         } else {
@@ -124,6 +132,7 @@ export default function InteractiveOrangeParticleDevfik() {
         p.life--;
         if (p.life <= 0) {
           const newParticle = createParticle();
+
           if (newParticle) {
             particles[i] = newParticle;
           } else {
@@ -136,6 +145,7 @@ export default function InteractiveOrangeParticleDevfik() {
       while (particles.length < Math.floor((canvas.width * canvas.height) / 200)) {
         // Maintain higher density
         const newParticle = createParticle();
+
         if (newParticle) particles.push(newParticle);
       }
 
@@ -155,6 +165,7 @@ export default function InteractiveOrangeParticleDevfik() {
 
     const handleMove = (x: number, y: number) => {
       const rect = canvas.getBoundingClientRect();
+
       mousePositionRef.current = {
         x: x - rect.left,
         y: y - rect.top,
@@ -207,7 +218,7 @@ export default function InteractiveOrangeParticleDevfik() {
 
   return (
     <div ref={containerRef} className="w-full h-full relative">
-      <canvas ref={canvasRef} className="w-full h-full touch-none" aria-label="Interactive particle Devfik effect" />
+      <canvas ref={canvasRef} aria-label="Interactive particle Devfik effect" className="w-full h-full touch-none" />
     </div>
   );
 }

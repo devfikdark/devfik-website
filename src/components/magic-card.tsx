@@ -22,10 +22,11 @@ export function MagicCard({
   const mouseY = useMotionValue(-gradientSize);
 
   const handleMouseMove = useCallback(
-    (e: React.MouseEvent<HTMLDivElement>) => {
-      const { left, top } = e.currentTarget.getBoundingClientRect();
-      mouseX.set(e.clientX - left);
-      mouseY.set(e.clientY - top);
+    (event: React.MouseEvent<HTMLDivElement>) => {
+      const { left, top } = event.currentTarget.getBoundingClientRect();
+
+      mouseX.set(event.clientX - left);
+      mouseY.set(event.clientY - top);
     },
     [mouseX, mouseY],
   );
@@ -42,9 +43,9 @@ export function MagicCard({
 
   return (
     <div
-      onMouseMove={handleMouseMove}
+      className={cn("group relative flex size-full overflow-hidden rounded-xl bg-card", className)}
       onMouseLeave={handleMouseLeave}
-      className={cn("group relative flex size-full overflow-hidden rounded-xl bg-card", className)}>
+      onMouseMove={handleMouseMove}>
       <div className="relative z-10">{children}</div>
       <motion.div
         className="pointer-events-none absolute -inset-px rounded-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"

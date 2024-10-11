@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 import { BlurFade } from "@/components/blur-fade";
 import { Heading } from "@/components/ui/heading";
@@ -31,9 +30,9 @@ export function AboutUsSection() {
                 alt="about-us"
                 className="rounded-2xl shadow-2xl"
                 height={500}
+                objectFit="cover"
                 src="/images/about-us.png"
                 width={500}
-                objectFit="cover"
               />
               <div className="absolute -bottom-6 -left-6 bg-primary text-foreground-normal p-4 rounded-lg shadow-lg">
                 <p className="font-bold text-2xl">98%</p>

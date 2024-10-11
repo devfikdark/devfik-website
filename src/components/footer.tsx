@@ -10,24 +10,24 @@ export function Footer() {
 
           <div className="ml-auto flex gap-2">
             <picture>
-              <img src="/images/mail.png" alt="Mail" width={35} height={35} />
+              <img alt="Mail" height={35} src="/images/mail.png" width={35} />
             </picture>
             <picture>
-              <img src="/images/x.png" alt="X" width={35} height={35} />
+              <img alt="X" height={35} src="/images/x.png" width={35} />
             </picture>
             <picture>
-              <img src="/images/linkedin.png" alt="LinkedIn" width={35} height={35} />
+              <img alt="LinkedIn" height={35} src="/images/linkedin.png" width={35} />
             </picture>
             <picture>
-              <img src="/images/facebook.png" alt="Facebook" width={35} height={35} />
+              <img alt="Facebook" height={35} src="/images/facebook.png" width={35} />
             </picture>
           </div>
         </div>
         <picture className="w-full">
           <img
-            src="/images/devfik.png"
             alt="devfik"
             className="w-full h-auto transition-all duration-500 filter grayscale group-hover:filter-none"
+            src="/images/devfik.png"
           />
         </picture>
       </div>

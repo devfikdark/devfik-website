@@ -1,11 +1,13 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+
 import { cn } from "@/lib/utils";
 import { gambetta } from "@/lib/fonts";
+
+/* eslint-disable id-length */
 
 export function Header() {
   const [isVisible, setIsVisible] = useState(true);
@@ -15,6 +17,7 @@ export function Header() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
+
       if (currentScrollY > lastScrollY) {
         setIsVisible(false);
       } else {
@@ -24,6 +27,7 @@ export function Header() {
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
@@ -58,14 +62,14 @@ export function Header() {
   return (
     <>
       <motion.header
+        animate={{ y: isVisible ? 0 : -100 }}
         className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md flex justify-center"
         initial={{ y: 0 }}
-        animate={{ y: isVisible ? 0 : -100 }}
         transition={{ duration: 0.3 }}>
         <div className="max-w-4xl w-full px-4">
           <div className="flex items-center justify-between h-14">
             <div className="flex-shrink-0">
-              <Link href="/" className="text-primary font-bold text-xl">
+              <Link className="text-primary font-bold text-xl" href="/">
                 {/* <Image src="/logo.png" alt="Logo" width={120} height={40} /> */}
                 devfik
               </Link>
@@ -75,8 +79,8 @@ export function Header() {
                 {menuItems.map((item) => (
                   <li key={item.href}>
                     <Link
-                      href={item.href}
-                      className={cn("text-foreground hover:text-foreground-normal lowercase", gambetta.className)}>
+                      className={cn("text-foreground hover:text-foreground-normal lowercase", gambetta.className)}
+                      href={item.href}>
                       {item.label}
                     </Link>
                   </li>
@@ -95,14 +99,14 @@ export function Header() {
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
-            className="fixed inset-0 bg-primary z-50 flex flex-col"
-            variants={menuVariants}
-            initial="hidden"
             animate="visible"
-            exit="exit">
+            className="fixed inset-0 bg-primary z-50 flex flex-col"
+            exit="exit"
+            initial="hidden"
+            variants={menuVariants}>
             <div className="flex justify-between items-center p-4">
               <div className="flex-shrink-0">
-                <Link href="/" className="text-foreground-normal text-xl" onClick={() => setIsMenuOpen(false)}>
+                <Link className="text-foreground-normal text-xl" href="/" onClick={() => setIsMenuOpen(false)}>
                   {/* <Image src="/logo.png" alt="Logo" width={120} height={40} /> */}
                   devfik
                 </Link>
@@ -116,8 +120,8 @@ export function Header() {
                 {menuItems.map((item) => (
                   <motion.li key={item.href} variants={itemVariants}>
                     <Link
-                      href={item.href}
                       className={cn("text-2xl text-foreground-normal lowercase w-full", gambetta.className)}
+                      href={item.href}
                       onClick={() => setIsMenuOpen(false)}>
                       {item.label}
                     </Link>

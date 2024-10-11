@@ -19,14 +19,14 @@ export function OurClients() {
                 className="group relative overflow-hidden rounded-lg transition-transform duration-300 hover:scale-105">
                 <picture>
                   <img
-                    src={`/images/clients-logo/${index}.png`}
                     alt={`client-${index}`}
-                    width={100}
-                    height={100}
                     className="w-full h-auto filter grayscale transition-all duration-300 group-hover:grayscale-0"
+                    height={100}
+                    src={`/images/clients-logo/${index}.png`}
+                    width={100}
                   />
                 </picture>
-                <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black opacity-0 transition-opacity duration-300 group-hover:opacity-20" />
               </div>
             ))}
           </div>

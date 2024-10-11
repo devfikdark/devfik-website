@@ -16,7 +16,7 @@ export function HeroSection() {
           <BlurFade delay={0.25} yOffset={10}>
             <Heading className="text-4xl md:text-5xl font-bold">
               Creating Digital Solutions <br /> That
-              <FlipWords words={words} className="text-foreground" />
+              <FlipWords className="text-foreground" words={words} />
             </Heading>
           </BlurFade>
 
@@ -34,7 +34,7 @@ export function HeroSection() {
         </div>
 
         <div className="w-full lg:w-1/2 h-[40vh] sm:h-[50vh] lg:h-[60vh] flex items-center justify-center relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full blur-3xl"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full blur-3xl" />
           <div className="w-full h-full max-w-[500px] max-h-[500px] relative z-10">
             <InteractiveOrangeParticleDevfik />
           </div>
@@ -47,7 +47,7 @@ export function HeroSection() {
         )}
       />
 
-      <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-background to-transparent"></div>
+      <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-background to-transparent" />
     </div>
   );
 }
