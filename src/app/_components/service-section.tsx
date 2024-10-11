@@ -29,8 +29,8 @@ export function ServiceSection() {
                     />
                   </picture>
                 </div>
-                <h3 className="text-2xl font-bold mb-3 text-foreground-normal">{service.title}</h3>
-                <p className="text-lg flex-grow">{service.description}</p>
+                <h3 className="text-xl font-medium mb-3 text-foreground-normal">{service.title}</h3>
+                <p className="text-md flex-grow">{service.description}</p>
               </MagicCard>
             </BlurFade>
           ))}

@@ -17,9 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${satoshi.className} overflow-x-hidden tracking-wide antialiased dark`}>
+      <body
+        className={`${satoshi.className} overflow-x-hidden tracking-wide antialiased dark flex flex-col min-h-screen`}>
         <Header />
-        {children}
+        <main className="flex-grow">{children}</main>
         <Footer />
       </body>
     </html>

@@ -9,18 +9,31 @@ export function Footer() {
           </div>
 
           <div className="ml-auto flex gap-2">
-            <picture>
-              <img alt="Mail" height={35} src="/images/mail.png" width={35} />
-            </picture>
-            <picture>
-              <img alt="X" height={35} src="/images/x.png" width={35} />
-            </picture>
-            <picture>
-              <img alt="LinkedIn" height={35} src="/images/linkedin.png" width={35} />
-            </picture>
-            <picture>
-              <img alt="Facebook" height={35} src="/images/facebook.png" width={35} />
-            </picture>
+            <a href="mailto:support@devfik.com">
+              <picture>
+                <img alt="Mail" height={35} src="/images/mail.png" width={35} />
+              </picture>
+            </a>
+            <a href="https://x.com/devfik" target="_blank" rel="noreferrer">
+              <picture>
+                <img alt="X" height={35} src="/images/x.png" width={35} />
+              </picture>
+            </a>
+            <a href="https://www.linkedin.com/company/devfik" target="_blank" rel="noreferrer">
+              <picture>
+                <img alt="LinkedIn" height={35} src="/images/linkedin.png" width={35} />
+              </picture>
+            </a>
+            <a href="https://www.facebook.com/devfik" target="_blank" rel="noreferrer">
+              <picture>
+                <img alt="Facebook" height={35} src="/images/facebook.png" width={35} />
+              </picture>
+            </a>
+            <a href="https://github.com/devfikdark" target="_blank" rel="noreferrer">
+              <picture>
+                <img alt="Github" height={35} src="/images/github.png" width={35} />
+              </picture>
+            </a>
           </div>
         </div>
         <picture className="w-full">

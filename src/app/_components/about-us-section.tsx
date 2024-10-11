@@ -11,7 +11,7 @@ export function AboutUsSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 lg:items-center p-8 lg:p-12">
         <div>
           <BlurFade delay={0.25} yOffset={10}>
-            <Heading className="text-center lg:text-left text-4xl md:text-6xl mb-6">About Us</Heading>
+            <Heading className="text-center lg:text-left text-4xl md:text-6xl mb-6">About us</Heading>
           </BlurFade>
           <BlurFade delay={0.5} yOffset={10}>
             <p className="text-xl tracking-wide mb-8">
