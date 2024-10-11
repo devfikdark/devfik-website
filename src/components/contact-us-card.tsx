@@ -8,12 +8,12 @@ export function ContactUsCard() {
   return (
     <BlurFade delay={0.25} yOffset={10}>
       <section className="container max-w-6xl mx-auto mt-40 lg:mt-72">
-        <div className="p-20 rounded-2xl bg-card relative overflow-hidden">
+        <div className="p-4 sm:p-8 md:p-20 rounded-2xl bg-card relative overflow-hidden">
           <div className="relative z-10">
             <Heading className="text-4xl md:text-6xl text-center break-words">
               Let&apos;s Build Something Extraordinary Together
             </Heading>
-            <div className="mt-8 flex justify-center gap-3">
+            <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
               <Button>Contact Us</Button>
               <Button variant="secondary">Schedule a meeting</Button>
             </div>
