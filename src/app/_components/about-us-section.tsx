@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 
 import { BlurFade } from "@/components/blur-fade";
 import { Heading } from "@/components/ui/heading";

@@ -111,3 +111,62 @@ export const Testimonials = [
     description: "Excellent work. Thanks a lot!",
   },
 ];
+
+export const Projects = [
+  {
+    id: 1,
+    title: "DebitCredit",
+    description:
+      "DebitCredit is a comprehensive financial tracking solution that helps users manage their income, expenses, owed debts, goals, and budgets with ease. Designed for individuals and small businesses, it provides powerful tools to streamline financial planning and stay on top of monetary commitments, ensuring better financial health and clarity.",
+    href: "#",
+  },
+  {
+    id: 2,
+    title: "Radme",
+    description:
+      "Radme is a specialised website developed by devfik for a US-based radiology doctor, designed to support medical professionals and students. The platform offers interactive quizzes for learning and assessments, and features an advanced DICOM viewer that allows users to view CT and MRI scans. Additionally, it provides tools for writing findings and impressions, making it an invaluable resource for radiology education and practice.",
+    href: "#",
+  },
+  {
+    id: 3,
+    title: "MedMatchMe",
+    description:
+      "MedMatchMe is a platform developed by devfik to help medical students secure residency placements. Designed in collaboration with a US doctor, this website streamlines the process of matching graduating students with residency programs, offering a user-friendly interface and efficient application management tools. MedMatchMe simplifies the complex residency application process, making it an essential tool for medical students entering their next career phase.",
+    href: "#",
+  },
+  {
+    id: 4,
+    title: "Epsilon",
+    description:
+      "Epsilon is a powerful data management platform developed by devfik, designed to handle a dataset of over 100 million leads. This service allows users to create accounts, manage subscriptions, and easily search and download specific data. With its intuitive interface and robust functionality, Epsilon provides businesses and marketers with access to a vast amount of leads, streamlining their data-driven decision-making processes.",
+    href: "#",
+  },
+  {
+    id: 5,
+    title: "CRM System",
+    description:
+      "Custom CRM solutions developed by devfik encompass two comprehensive CRM software applications built from the ground up, covering every aspect from architecture to deployment. These solutions are designed to streamline customer relationship management for businesses, offering features such as lead tracking, sales pipeline management, and customer engagement tools. By tailoring the software to specific client needs, DevFik delivers robust and scalable CRM systems that enhance productivity and foster stronger customer relationships.",
+    href: "#",
+  },
+  {
+    id: 6,
+    title: "DAM Solution",
+    description:
+      "Digital Asset Management (DAM) platform developed by devfik for a professional photographer. The website offers a streamlined solution for organizing, storing, and managing high-quality images and digital assets. With its intuitive interface, Bildlogistik enables photographers to efficiently categorize and retrieve their work, ensuring seamless asset management and easy collaboration with clients",
+    href: "#",
+  },
+  {
+    id: 7,
+    title: "Devnext.io",
+    description:
+      "DevNext.io is a portfolio website developed by the devfik team to showcase the software solutions and services provided by DevNext. Our team focused on creating a sleek, modern, and responsive design that effectively highlights DevNext’s offerings. The website was built with a user-centric approach, ensuring seamless navigation and a professional presentation of their projects, expertise, and achievements in the software development industry.",
+    href: "#",
+  },
+  {
+    id: 8,
+    title: "Projekt Freiheit",
+    description:
+      "Projekt Freiheit is a coaching platform where devFik provides comprehensive automation support to streamline business operations. Working closely with owner Marius Sobotta, we have implemented automation solutions that integrate Facebook leads, sales invoices, calendar bookings, emails, and WhatsApp communications. This holistic approach not only enhances efficiency but also improves client engagement, enabling the coaching business to focus on delivering exceptional value to its clients.",
+    href: "#",
+  },
+];

@@ -14,22 +14,22 @@ export function Footer() {
                 <img alt="Mail" height={35} src="/images/mail.png" width={35} />
               </picture>
             </a>
-            <a href="https://x.com/devfik" target="_blank" rel="noreferrer">
+            <a href="https://x.com/devfik" rel="noreferrer" target="_blank">
               <picture>
                 <img alt="X" height={35} src="/images/x.png" width={35} />
               </picture>
             </a>
-            <a href="https://www.linkedin.com/company/devfik" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/company/devfik" rel="noreferrer" target="_blank">
               <picture>
                 <img alt="LinkedIn" height={35} src="/images/linkedin.png" width={35} />
               </picture>
             </a>
-            <a href="https://www.facebook.com/devfik" target="_blank" rel="noreferrer">
+            <a href="https://www.facebook.com/devfik" rel="noreferrer" target="_blank">
               <picture>
                 <img alt="Facebook" height={35} src="/images/facebook.png" width={35} />
               </picture>
             </a>
-            <a href="https://github.com/devfikdark" target="_blank" rel="noreferrer">
+            <a href="https://github.com/devfikdark" rel="noreferrer" target="_blank">
               <picture>
                 <img alt="Github" height={35} src="/images/github.png" width={35} />
               </picture>
