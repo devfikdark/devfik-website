@@ -1,6 +1,5 @@
 import { AnimatedGridPattern } from "@/components/animated-grid-pattern";
 import { BlurFade } from "@/components/blur-fade";
-import { DotPattern } from "@/components/dot-patterns";
 import { Heading } from "@/components/ui/heading";
 import { cn } from "@/lib/utils";
 
@@ -17,11 +16,11 @@ export function WorkHeroSection() {
         </div>
       </BlurFade>
       <AnimatedGridPattern
-        numSquares={30}
-        maxOpacity={0.1}
-        duration={3}
-        repeatDelay={1}
         className={cn("[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]", "inset-x-0 ")}
+        duration={3}
+        maxOpacity={0.1}
+        numSquares={30}
+        repeatDelay={1}
       />
       <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-background to-transparent" />
     </div>

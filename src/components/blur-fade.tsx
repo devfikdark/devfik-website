@@ -2,7 +2,7 @@
 
 import { motion, Variants } from "framer-motion";
 
-/* eslint-disable */
+/* eslint-disable id-length */
 interface BlurFadeProps {
   children: React.ReactNode;
   className?: string;
@@ -37,14 +37,14 @@ export function BlurFade({
     <motion.div
       className={className}
       initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.3 }}
       transition={{
         delay: 0.02 + delay,
         duration,
         ease: "easeInOut",
       }}
-      variants={combinedVariants}>
+      variants={combinedVariants}
+      viewport={{ once: true, amount: 0.3 }}
+      whileInView="visible">
       {children}
     </motion.div>
   );
