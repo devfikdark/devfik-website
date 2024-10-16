@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 export function Stats() {
   return (
-    <section className="container mt-40 lg:mt-72">
+    <section className="container mt-32 lg:mt-60">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         <BlurFade delay={0.25} yOffset={10}>
           <div className="flex flex-row md:flex-col gap-4 md:gap-2 justify-start md:justify-center items-center">

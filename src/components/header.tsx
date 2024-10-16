@@ -34,7 +34,7 @@ export function Header() {
   const menuItems = [
     { href: "/", label: "Index" },
     { href: "/our-work", label: "Our Work" },
-    { href: "/team", label: "Team" },
+    { href: "/our-story", label: "Our Story" },
     { href: "/contact-us", label: "Contact Us" },
   ];
 
@@ -120,7 +120,7 @@ export function Header() {
                 {menuItems.map((item) => (
                   <motion.li key={item.href} variants={itemVariants}>
                     <Link
-                      className={cn("text-2xl text-foreground-normal lowercase w-full", gambetta.className)}
+                      className={cn("text-4xl text-foreground-normal lowercase w-full", gambetta.className)}
                       href={item.href}
                       onClick={() => setIsMenuOpen(false)}>
                       {item.label}

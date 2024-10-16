@@ -4,7 +4,7 @@ import { Heading } from "@/components/ui/heading";
 export function HowWeWork() {
   return (
     <BlurFade delay={0.25} yOffset={10}>
-      <section className="container mt-40 lg:mt-72">
+      <section className="container mt-32 lg:mt-60">
         <div className="px-4 lg:px-14">
           <div className="relative p-6 md:p-16">
             <div className="relative z-10 lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center">

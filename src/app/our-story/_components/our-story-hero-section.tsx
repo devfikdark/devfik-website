@@ -3,15 +3,15 @@ import { BlurFade } from "@/components/blur-fade";
 import { Heading } from "@/components/ui/heading";
 import { cn } from "@/lib/utils";
 
-export function WorkHeroSection() {
+export function OurStoryHeroSection() {
   return (
     <div className="min-h-[70vh] flex justify-center items-center container max-w-6xl mx-auto relative">
       <BlurFade delay={0.25} yOffset={10}>
         <div className="flex flex-col items-center justify-center">
-          <Heading className="text-5xl md:text-8xl text-center">Our Work</Heading>
+          <Heading className="text-5xl md:text-8xl text-center">Our Story</Heading>
           <p className="text-center text-lg mt-4 tracking-wide">
-            We have provided our services to different types of people with different type of ideas. <br /> Below are
-            some of the best works we have done
+            From humble beginnings to industry leaders, our journey has been one of passion and innovation. <br />
+            Discover the milestones that have shaped our company and the values that drive us forward.
           </p>
         </div>
       </BlurFade>

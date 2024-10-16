@@ -5,7 +5,7 @@ import { Services } from "@/lib/data";
 
 export function ServiceSection() {
   return (
-    <section className="container max-w-6xl mx-auto mt-40 lg:mt-72">
+    <section className="container max-w-6xl mx-auto mt-32 lg:mt-60">
       <BlurFade delay={0.25} yOffset={10}>
         <Heading className="text-center text-4xl md:text-6xl">Services we provide</Heading>
         <p className="text-center text-lg mt-4 tracking-wide">

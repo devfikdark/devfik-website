@@ -5,7 +5,7 @@ import { Heading } from "@/components/ui/heading";
 
 export function AboutUsSection() {
   return (
-    <section className="container max-w-6xl mx-auto mt-40 lg:mt-72 relative">
+    <section className="container max-w-6xl mx-auto mt-32 lg:mt-60 relative">
       <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 to-card/10 rounded-3xl -z-10" />
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 lg:items-center p-8 lg:p-12">
         <div>

@@ -7,7 +7,7 @@ import { Heading } from "./ui/heading";
 export function ContactUsCard() {
   return (
     <BlurFade delay={0.25} yOffset={10}>
-      <section className="container max-w-6xl mx-auto mt-40 lg:mt-72">
+      <section className="container max-w-6xl mx-auto mt-32 lg:mt-60">
         <div className="p-4 sm:p-8 md:p-20 rounded-2xl bg-card relative overflow-hidden">
           <div className="relative z-10">
             <Heading className="text-4xl md:text-6xl text-center break-words">
