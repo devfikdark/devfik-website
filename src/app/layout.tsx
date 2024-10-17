@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import NextTopLoader from "nextjs-toploader";
 
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
@@ -19,6 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${satoshi.className} overflow-x-hidden tracking-wide antialiased dark flex flex-col min-h-screen`}>
+        <NextTopLoader color="#F97316" easing="ease" height={2} showSpinner={false} />
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
