@@ -4,23 +4,14 @@ import { BlurFade } from "@/components/blur-fade";
 import { Heading } from "@/components/ui/heading";
 import { cn } from "@/lib/utils";
 import createGlobe from "cobe";
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 export function WorldWideService() {
-  const features = [
-    {
-      title: "Deploy in seconds",
-      description:
-        "With our blazing fast, state of the art, cutting edge, we are so back cloud servies (read AWS) - you can deploy your model in seconds.",
-      skeleton: <SkeletonFour />,
-      className: "col-span-1 lg:col-span-3 border-b lg:border-none",
-    },
-  ];
   return (
-    <div className="relative z-20 py-10 lg:py-40 max-w-7xl mx-auto">
+    <div className="mt-32 lg:mt-60 max-w-6xl mx-auto">
       <BlurFade delay={0.25} yOffset={10}>
         <Heading className="text-center text-4xl md:text-6xl">Our Global Reach</Heading>
-        <p className="text-center text-lg mt-4 tracking-wide">
+        <p className="text-center text-lg mt-4 tracking-wide max-w-4xl mx-auto">
           From Bangladesh to Germany, our services span the globe. We're proud to deliver cutting-edge solutions to
           clients across continents, bridging distances with technology.
         </p>
@@ -28,20 +19,14 @@ export function WorldWideService() {
 
       <div className="relative ">
         <div className="w-full h-full">
-          <SkeletonFour />
+          <div className="h-60 md:h-[400px] lg:h-[600px] flex flex-col items-center relative bg-transparent dark:bg-transparent mt-10">
+            <Globe className="absolute inset-0" />
+          </div>
         </div>
       </div>
     </div>
   );
 }
-
-export const SkeletonFour = () => {
-  return (
-    <div className="h-60 md:h-[400px] lg:h-[600px] flex flex-col items-center relative bg-transparent dark:bg-transparent mt-10">
-      <Globe className="absolute inset-0" />
-    </div>
-  );
-};
 
 export const Globe = ({ className }: { className?: string }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);

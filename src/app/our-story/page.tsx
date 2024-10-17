@@ -9,9 +9,9 @@ export default function OurStory() {
   return (
     <>
       <OurStoryHeroSection />
-      <section className="container max-w-4xl mx-auto flex flex-col w-full gap-8">
+      <section className="container max-w-6xl mx-auto flex flex-col w-full gap-8">
         <BlurFade delay={0.25} yOffset={20}>
-          <h2 className="text-3xl font-bold text-foreground-normal">Our Journey & Vision</h2>
+          <h2 className="text-2xl md:text-3xl font-medium text-foreground-normal">Our Journey & Vision</h2>
         </BlurFade>
 
         <BlurFade delay={0.25} yOffset={20}>
