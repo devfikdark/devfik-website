@@ -4,7 +4,9 @@ export function Footer() {
       <div className="container max-w-6xl mx-auto w-full py-8">
         <div className="flex mb-20">
           <div>
-            <h2 className="text-primary text-3xl font-bold">devfik</h2>
+            <picture>
+              <img src="/images/white_logo_full.png" alt="Logo" width={120} height={40} />
+            </picture>
             <p className="mt-4">Innovating tomorrow, building today</p>
           </div>
 

@@ -110,6 +110,32 @@ export const Testimonials = [
     image: "/images/clients-image/Wassim_Taher.jpeg",
     description: "Excellent work. Thanks a lot!",
   },
+  {
+    name: "Jakob Jonsson",
+    position: "Project owner",
+    image: null,
+    description: "Devfik is fantastic and delivers in every way",
+  },
+  {
+    name: "Sean Blanchfield",
+    position: "Project owner",
+    image: null,
+    description:
+      "Devfik did a really good job fixing an issue I had with a problem on my Node JS backend. They were quickly able to analyze and solve the issue. I look forward to working with them again.",
+  },
+  {
+    name: "Sjors Van Eck",
+    position: "Project owner",
+    image: null,
+    description:
+      "They did great work and took the time to figure all issues out and completed the task successfully. Although the job was more demanding than expected beforehand, they felt responsible for rounding it off successfully. Recommendable programmers!",
+  },
+  {
+    name: "Yuri Bogdanov",
+    position: "Project owner",
+    image: null,
+    description: "Great work! Well done - went above and beyond! Will hire again.",
+  },
 ];
 
 export const Projects = [

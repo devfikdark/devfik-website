@@ -1,11 +1,11 @@
 "use client";
 
+import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useState } from "react";
 
-import { cn } from "@/lib/utils";
 import { gambetta } from "@/lib/fonts";
+import { cn } from "@/lib/utils";
 
 /* eslint-disable id-length */
 
@@ -70,8 +70,9 @@ export function Header() {
           <div className="flex items-center justify-between h-14">
             <div className="flex-shrink-0">
               <Link className="text-primary font-bold text-xl" href="/">
-                {/* <Image src="/logo.png" alt="Logo" width={120} height={40} /> */}
-                devfik
+                <picture>
+                  <img src="/images/white_logo_full.png" alt="Logo" width={120} height={40} />
+                </picture>
               </Link>
             </div>
             <nav className="hidden md:block">
@@ -100,15 +101,16 @@ export function Header() {
         {isMenuOpen && (
           <motion.div
             animate="visible"
-            className="fixed inset-0 bg-primary z-50 flex flex-col"
+            className="fixed inset-0 bg-card z-50 flex flex-col"
             exit="exit"
             initial="hidden"
             variants={menuVariants}>
             <div className="flex justify-between items-center p-4">
               <div className="flex-shrink-0">
                 <Link className="text-foreground-normal text-xl" href="/" onClick={() => setIsMenuOpen(false)}>
-                  {/* <Image src="/logo.png" alt="Logo" width={120} height={40} /> */}
-                  devfik
+                  <picture>
+                    <img src="/images/white_logo_full.png" alt="Logo" width={120} height={40} />
+                  </picture>
                 </Link>
               </div>
               <button className={cn("text-foreground-normal", gambetta.className)} onClick={() => setIsMenuOpen(false)}>
