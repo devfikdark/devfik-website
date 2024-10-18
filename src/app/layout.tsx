@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+
 import NextTopLoader from "nextjs-toploader";
 
 import { Footer } from "@/components/footer";

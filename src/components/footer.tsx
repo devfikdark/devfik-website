@@ -5,7 +5,7 @@ export function Footer() {
         <div className="flex mb-20">
           <div>
             <picture>
-              <img src="/images/white_logo_full.png" alt="Logo" width={120} height={40} />
+              <img alt="Logo" height={40} src="/images/white_logo_full.png" width={120} />
             </picture>
             <p className="mt-4">Innovating tomorrow, building today</p>
           </div>

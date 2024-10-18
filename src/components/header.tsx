@@ -71,7 +71,7 @@ export function Header() {
             <div className="flex-shrink-0">
               <Link className="text-primary font-bold text-xl" href="/">
                 <picture>
-                  <img src="/images/white_logo_full.png" alt="Logo" width={120} height={40} />
+                  <img alt="Logo" height={40} src="/images/white_logo_full.png" width={120} />
                 </picture>
               </Link>
             </div>
@@ -109,7 +109,7 @@ export function Header() {
               <div className="flex-shrink-0">
                 <Link className="text-foreground-normal text-xl" href="/" onClick={() => setIsMenuOpen(false)}>
                   <picture>
-                    <img src="/images/white_logo_full.png" alt="Logo" width={120} height={40} />
+                    <img alt="Logo" height={40} src="/images/white_logo_full.png" width={120} />
                   </picture>
                 </Link>
               </div>

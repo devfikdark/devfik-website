@@ -1,9 +1,8 @@
-import { BlurFade } from "@/components/blur-fade";
 import { OurStoryHeroSection } from "./_components/our-story-hero-section";
-import { ContactUsCard } from "@/components/contact-us-card";
-import { CheckIcon } from "lucide-react";
 import { WorldWideService } from "./_components/world-wide-service";
-import { Heading } from "@/components/ui/heading";
+
+import { BlurFade } from "@/components/blur-fade";
+import { ContactUsCard } from "@/components/contact-us-card";
 
 export default function OurStory() {
   return (
