@@ -15,6 +15,11 @@ body {
   }
 }
 
+::selection {
+  background: #2a2c31;
+  color: #999999;
+}
+
 @layer base {
   :root {
     --background: 36 33% 98%;
