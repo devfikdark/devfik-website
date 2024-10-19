@@ -1,15 +1,31 @@
 "use client";
 
 import createGlobe from "cobe";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { BlurFade } from "@/components/blur-fade";
 import { Heading } from "@/components/ui/heading";
 import { cn } from "@/lib/utils";
 
 export function WorldWideService() {
+  const [countries] = useState([
+    "Bangladesh",
+    "Germany",
+    "USA",
+    "Netherlands",
+    "Thailand",
+    "Singapore",
+    "Indonesia",
+    "Norway",
+    "Vietnam",
+    "Kosovo",
+    "Lebanon",
+    "Uzbekistan",
+    "Malaysia",
+  ]);
+
   return (
-    <div className="mt-32 lg:mt-60 max-w-6xl mx-auto">
+    <div className="mt-32 lg:mt-60 container mx-auto px-4">
       <BlurFade delay={0.25} yOffset={10}>
         <Heading className="text-center text-4xl md:text-6xl">Our Global Reach</Heading>
         <p className="text-center text-lg mt-4 tracking-wide max-w-4xl mx-auto">
@@ -18,10 +34,20 @@ export function WorldWideService() {
         </p>
       </BlurFade>
 
-      <div className="relative ">
-        <div className="w-full h-full">
-          <div className="h-60 md:h-[400px] lg:h-[600px] flex flex-col items-center relative bg-transparent dark:bg-transparent mt-10">
-            <Globe className="absolute inset-0" />
+      <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="order-2 lg:order-1">
+          <h3 className="text-2xl font-semibold mb-4 text-foreground-normal">Countries We Serve</h3>
+          <ul className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            {countries.map((country, index) => (
+              <li key={index} className="text-md">
+                {country}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="order-1 lg:order-2 flex justify-center items-center">
+          <div className="w-full max-w-[400px] aspect-square">
+            <Globe />
           </div>
         </div>
       </div>
@@ -29,20 +55,20 @@ export function WorldWideService() {
   );
 }
 
-export const Globe = ({ className }: { className?: string }) => {
+export const Globe = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     let phi = 0;
-    let width = 600;
-    let height = 600;
     let globe: ReturnType<typeof createGlobe>;
+    let width = 0;
+    let height = 0;
 
     const updateSize = () => {
-      if (containerRef.current) {
-        width = containerRef.current.clientWidth;
-        height = containerRef.current.clientHeight;
+      const container = canvasRef.current?.parentElement;
+      if (container) {
+        width = container.clientWidth;
+        height = container.clientHeight;
       }
     };
 
@@ -63,7 +89,7 @@ export const Globe = ({ className }: { className?: string }) => {
         mapBrightness: 6,
         baseColor: [0.3, 0.3, 0.3],
         markerColor: [0.1, 0.8, 1],
-        glowColor: [1, 1, 1],
+        glowColor: [0.1, 0.1, 0.1],
         markers: [
           { location: [23.685, 90.3563], size: 0.1 }, // Bangladesh
           { location: [51.1657, 10.4515], size: 0.06 }, // Germany
@@ -81,7 +107,7 @@ export const Globe = ({ className }: { className?: string }) => {
         ],
         onRender: (state) => {
           state.phi = phi;
-          phi += 0.01;
+          phi += 0.005;
         },
       });
     };
@@ -105,9 +131,5 @@ export const Globe = ({ className }: { className?: string }) => {
     };
   }, []);
 
-  return (
-    <div ref={containerRef} className={cn("w-full h-full", className)}>
-      <canvas ref={canvasRef} style={{ width: "100%", height: "100%" }} />
-    </div>
-  );
+  return <canvas ref={canvasRef} style={{ width: "100%", height: "100%", maxWidth: "100%", display: "block" }} />;
 };
