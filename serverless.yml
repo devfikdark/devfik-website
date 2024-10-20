@@ -1,0 +1,13 @@
+service: nextjs-app
+app: devfik
+org: devfik
+
+plugins:
+  - serverless-next.js
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  region: us-east-1
+
+nextConfigDir: ./
