@@ -5,7 +5,6 @@ import { useEffect, useRef, useState } from "react";
 
 import { BlurFade } from "@/components/blur-fade";
 import { Heading } from "@/components/ui/heading";
-import { cn } from "@/lib/utils";
 
 export function WorldWideService() {
   const [countries] = useState([
@@ -66,6 +65,7 @@ export const Globe = () => {
 
     const updateSize = () => {
       const container = canvasRef.current?.parentElement;
+
       if (container) {
         width = container.clientWidth;
         height = container.clientHeight;

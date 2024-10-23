@@ -35,7 +35,9 @@ export function ProjectSection() {
               </div>
             </div>
           </BlurFade>
-          {index !== Projects.length - 1 && <hr className="mx-auto my-0 h-px w-1/3 border-none bg-white/10" />}
+          {index !== Projects.length - 1 && (
+            <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-2/3 mx-auto" />
+          )}
         </Fragment>
       ))}
     </section>
