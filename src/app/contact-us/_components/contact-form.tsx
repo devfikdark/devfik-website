@@ -76,7 +76,7 @@ export function ContactForm() {
             name="subject"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Email</FormLabel>
+                <FormLabel>Subject</FormLabel>
                 <FormControl>
                   <Input {...field} />
                 </FormControl>
