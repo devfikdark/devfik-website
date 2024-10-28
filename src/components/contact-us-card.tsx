@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { BlurFade } from "./blur-fade";
 import { ShootingStars } from "./shooting-stars";
 import { StarsBackground } from "./stars-background";
@@ -14,8 +16,12 @@ export function ContactUsCard() {
               Let&apos;s Build Something Extraordinary Together
             </Heading>
             <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
-              <Button>Contact Us</Button>
-              <Button variant="secondary">Schedule a meeting</Button>
+              <Button asChild>
+                <Link href="/contact">Schedule a meeting</Link>
+              </Button>
+              <Button asChild variant="secondary">
+                <a href="mailto:support@devfik.com">Send email</a>
+              </Button>
             </div>
           </div>
           <div className="absolute inset-0">

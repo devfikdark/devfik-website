@@ -1,8 +1,7 @@
-import { ExternalLink, MoveRight } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { Fragment } from "react";
 
 import { BlurFade } from "@/components/blur-fade";
-import { Button } from "@/components/ui/button";
 import { Heading } from "@/components/ui/heading";
 import { Projects } from "@/lib/data";
 
@@ -28,10 +27,10 @@ export function ProjectSection() {
               <div className="w-full md:flex-1">
                 {project.href ? (
                   <a
+                    className="group/link inline-flex items-center gap-4 text-2xl md:text-3xl font-medium text-foreground-normal mb-4 hover:text-primary transition-colors"
                     href={project.href}
-                    target="_blank"
                     rel="noopener noreferrer"
-                    className="group/link inline-flex items-center gap-4 text-2xl md:text-3xl font-medium text-foreground-normal mb-4 hover:text-primary transition-colors">
+                    target="_blank">
                     {project.title}
                     <ExternalLink className="w-6 h-6 group-hover/link:translate-x-1 transition-transform" />
                   </a>

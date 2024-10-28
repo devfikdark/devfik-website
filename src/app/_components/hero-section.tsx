@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { BlurFade } from "@/components/blur-fade";
 import { DotPattern } from "@/components/dot-patterns";
 import { FlipWords } from "@/components/flip-word";
@@ -27,8 +29,8 @@ export function HeroSection() {
           </BlurFade>
 
           <BlurFade delay={0.75} yOffset={10}>
-            <Button className="mt-8 text-sm" size="lg">
-              Get In Touch
+            <Button asChild className="mt-8 text-sm" size="lg">
+              <Link href="/contact">Get In Touch</Link>
             </Button>
           </BlurFade>
         </div>
