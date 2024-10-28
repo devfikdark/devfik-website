@@ -31,13 +31,12 @@ export function TeamSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {teamMembers.map((member, index) => (
             <BlurFade key={member.name} delay={0.25 + index * 0.1} yOffset={20}>
-              <div className="group relative overflow-hidden rounded-2xl bg-gray-900/5 p-8 transition-all hover:bg-gray-900/10">
+              <div className="group relative overflow-hidden rounded-2xl bg-gray-900/5 p-8 transition-all duration-500 hover:bg-gray-900/10">
                 <div className="aspect-square overflow-hidden rounded-xl">
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 
-                    filter grayscale group-hover:grayscale-0 group-hover:duration-1000"
+                    className="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110 filter grayscale group-hover:grayscale-0 group-hover:duration-[1500ms]"
                   />
                 </div>
                 <div className="mt-4">
