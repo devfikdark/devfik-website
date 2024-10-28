@@ -80,7 +80,10 @@ export function Header() {
                 {menuItems.map((item) => (
                   <li key={item.href}>
                     <Link
-                      className={cn("text-foreground hover:text-foreground-normal lowercase", gambetta.className)}
+                      className={cn(
+                        "text-foreground hover:text-foreground-normal text-lg lowercase",
+                        gambetta.className,
+                      )}
                       href={item.href}>
                       {item.label}
                     </Link>
@@ -101,11 +104,11 @@ export function Header() {
         {isMenuOpen && (
           <motion.div
             animate="visible"
-            className="fixed inset-0 bg-card z-50 flex flex-col"
+            className="fixed inset-0 bg-card z-50 flex flex-col backdrop-blur-md"
             exit="exit"
             initial="hidden"
             variants={menuVariants}>
-            <div className="flex justify-between items-center p-4">
+            <div className="flex justify-between items-center px-4 py-2">
               <div className="flex-shrink-0">
                 <Link className="text-foreground-normal text-xl" href="/" onClick={() => setIsMenuOpen(false)}>
                   <picture>
