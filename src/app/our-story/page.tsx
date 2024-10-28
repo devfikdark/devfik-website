@@ -1,4 +1,5 @@
 import { OurStoryHeroSection } from "./_components/our-story-hero-section";
+import { TeamSection } from "./_components/team-section";
 import { WorldWideService } from "./_components/world-wide-service";
 
 import { BlurFade } from "@/components/blur-fade";
@@ -25,9 +26,9 @@ export default function OurStory() {
             reality, one project at a time.
           </p>
         </BlurFade>
-
-        <WorldWideService />
       </section>
+      <TeamSection />
+      <WorldWideService />
       <ContactUsCard />
     </>
   );

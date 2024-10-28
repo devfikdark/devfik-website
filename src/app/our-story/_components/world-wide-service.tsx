@@ -24,7 +24,7 @@ export function WorldWideService() {
   ]);
 
   return (
-    <div className="mt-32 lg:mt-60 container mx-auto px-4">
+    <div className="mt-32 lg:mt-60 container max-w-6xl mx-auto px-4">
       <BlurFade delay={0.25} yOffset={10}>
         <Heading className="text-center text-4xl md:text-6xl">Our Global Reach</Heading>
         <p className="text-center text-lg mt-4 tracking-wide max-w-4xl mx-auto">
