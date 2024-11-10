@@ -16,7 +16,7 @@ export function Footer() {
                   <img alt="Mail" height={35} src="/images/mail.png" width={35} />
                 </picture>
               </a>
-              <a href="https://x.com/devfik" rel="noreferrer" target="_blank">
+              <a href="https://x.com/devfikbd" rel="noreferrer" target="_blank">
                 <picture>
                   <img alt="X" height={35} src="/images/x.png" width={35} />
                 </picture>
