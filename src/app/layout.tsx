@@ -71,9 +71,9 @@ export default function RootLayout({
             // and won't be undefined at runtime. We're confident about this because this env var
             // is required for OpenPanel to work and is set in our .env file
             clientId={process.env.NEXT_PUBLIC_OPENPANEL_CLIENT_ID!}
-            trackScreenViews={true}
             trackAttributes={true}
             trackOutgoingLinks={true}
+            trackScreenViews={true}
           />
           <NextTopLoader color="#F97316" easing="ease" height={2} showSpinner={false} />
           <Header />

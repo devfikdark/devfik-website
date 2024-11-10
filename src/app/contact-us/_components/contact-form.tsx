@@ -9,8 +9,8 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { sendEmail } from "@/app/services/send-email";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { sendEmail } from "@/services/send-email";
 
 export const formSchema = z.object({
   name: z.string().min(2, {
@@ -50,7 +50,7 @@ export function ContactForm() {
         setShowSuccess(true);
         setTimeout(() => {
           setShowSuccess(false);
-        }, 3000);
+        }, 5000);
       },
     });
   }
@@ -118,7 +118,7 @@ export function ContactForm() {
               )}
             />
             <div className="flex justify-end">
-              <Button type="submit" disabled={isSendingEmail}>
+              <Button disabled={isSendingEmail} type="submit">
                 {isSendingEmail ? "Sending..." : "Send"}
               </Button>
             </div>
