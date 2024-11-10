@@ -30,7 +30,7 @@ export function HeroSection() {
 
           <BlurFade delay={0.75} yOffset={10}>
             <Button asChild className="mt-8 text-sm" size="lg">
-              <Link href="/contact">Get In Touch</Link>
+              <Link href="/contact-us">Get In Touch</Link>
             </Button>
           </BlurFade>
         </div>

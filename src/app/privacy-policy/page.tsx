@@ -83,7 +83,7 @@ export default function PrivacyPolicy() {
         <h1 className="text-2xl font-medium text-foreground-normal">Contact us</h1>
         <p className="my-4">
           If you have any questions or concerns about this Privacy Policy, please contact us at{" "}
-          <a href="mailto:support@devfik.com" className="underline underline-offset-2">
+          <a className="underline underline-offset-2" href="mailto:support@devfik.com">
             support@devfik.com
           </a>
           .
