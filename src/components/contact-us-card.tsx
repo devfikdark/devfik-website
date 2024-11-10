@@ -17,7 +17,7 @@ export function ContactUsCard() {
             </Heading>
             <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
               <Button asChild>
-                <Link href="/contact">Schedule a meeting</Link>
+                <Link href="/contact-us">Schedule a meeting</Link>
               </Button>
               <Button asChild variant="secondary">
                 <a href="mailto:support@devfik.com">Send email</a>
