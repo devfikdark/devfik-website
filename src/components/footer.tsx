@@ -26,7 +26,7 @@ export function Footer() {
                   <img alt="LinkedIn" height={35} src="/images/linkedin.png" width={35} />
                 </picture>
               </a>
-              <a href="https://www.facebook.com/devfik" rel="noreferrer" target="_blank">
+              <a href="https://www.facebook.com/people/Devfik/61565410763624" rel="noreferrer" target="_blank">
                 <picture>
                   <img alt="Facebook" height={35} src="/images/facebook.png" width={35} />
                 </picture>
