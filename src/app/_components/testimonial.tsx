@@ -12,7 +12,54 @@ export function Testimonial() {
         </p>
       </BlurFade>
 
-      <div className="columns-1 sm:columns-2 lg:columns-3 gap-x-4 lg:gap-x-6 space-y-4 lg:space-y-6 mt-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-20 mb-6">
+        <div className="p-4 h-80 bg-card rounded-xl">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/NzE-3doXVnY?si=zYMOGdejTBXCIzyw"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen></iframe>
+        </div>
+        <div className="p-4 h-80 bg-card rounded-xl">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/O16e2mhaPsk?si=qN118KfIM8JaZb6s"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen></iframe>
+        </div>
+        <div className="p-4 h-80 bg-card rounded-xl">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/yvq1d9xVwH0?si=grctOMq-FxL2KXuZ"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen></iframe>
+        </div>
+        <div className="p-4 h-80 bg-card rounded-xl">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/zMfgwlRwRc8?si=27BQdHnefe0vnzvb"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen></iframe>
+        </div>
+      </div>
+
+      <div className="columns-1 sm:columns-2 lg:columns-3 gap-x-4 lg:gap-x-6 space-y-4 lg:space-y-6">
         {Testimonials.map((testimonial, index) => (
           <BlurFade key={index} delay={0.5 + index * 0.02} yOffset={10}>
             <div className="p-4 break-inside-avoid rounded-xl bg-card">
