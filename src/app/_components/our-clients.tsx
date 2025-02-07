@@ -13,7 +13,7 @@ export function OurClients() {
       <BlurFade delay={0.5} yOffset={10}>
         <div className="mt-20">
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center justify-items-center">
-            {[1, 2, 3, 4, 5, 6, 7].map((index) => (
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((index) => (
               <div
                 key={index}
                 className="group relative overflow-hidden rounded-lg transition-transform duration-300 hover:scale-105">

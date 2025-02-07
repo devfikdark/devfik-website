@@ -15,47 +15,51 @@ export function Testimonial() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-20 mb-6">
         <div className="p-4 h-80 bg-card rounded-xl">
           <iframe
-            width="100%"
+            allowFullScreen
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            frameBorder="0"
             height="100%"
+            referrerPolicy="strict-origin-when-cross-origin"
             src="https://www.youtube.com/embed/NzE-3doXVnY?si=zYMOGdejTBXCIzyw"
             title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen></iframe>
+            width="100%"
+          />
         </div>
         <div className="p-4 h-80 bg-card rounded-xl">
           <iframe
-            width="100%"
+            allowFullScreen
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            frameBorder="0"
             height="100%"
+            referrerPolicy="strict-origin-when-cross-origin"
             src="https://www.youtube.com/embed/O16e2mhaPsk?si=qN118KfIM8JaZb6s"
             title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen></iframe>
+            width="100%"
+          />
         </div>
         <div className="p-4 h-80 bg-card rounded-xl">
           <iframe
-            width="100%"
+            allowFullScreen
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            frameBorder="0"
             height="100%"
+            referrerPolicy="strict-origin-when-cross-origin"
             src="https://www.youtube.com/embed/yvq1d9xVwH0?si=grctOMq-FxL2KXuZ"
             title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen></iframe>
+            width="100%"
+          />
         </div>
         <div className="p-4 h-80 bg-card rounded-xl">
           <iframe
-            width="100%"
+            allowFullScreen
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            frameBorder="0"
             height="100%"
+            referrerPolicy="strict-origin-when-cross-origin"
             src="https://www.youtube.com/embed/zMfgwlRwRc8?si=27BQdHnefe0vnzvb"
             title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen></iframe>
+            width="100%"
+          />
         </div>
       </div>
 
