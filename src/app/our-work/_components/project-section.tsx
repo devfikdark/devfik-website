@@ -37,12 +37,12 @@ export function ProjectSection() {
                 ) : (
                   <h1 className="text-2xl md:text-3xl font-medium text-foreground-normal mb-4">{project.title}</h1>
                 )}
-                <p className="text-lg">{project.description}</p>
+                <p className="text-lg text-foreground">{project.description}</p>
               </div>
             </div>
           </BlurFade>
           {index !== Projects.length - 1 && (
-            <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-2/3 mx-auto" />
+            <div className="bg-linear-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-2/3 mx-auto" />
           )}
         </Fragment>
       ))}

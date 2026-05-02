@@ -1,24 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Tailwind v4: legacy theme tokens (e.g. bg-primary) live in tailwind.config.ts — load it explicitly. */
+@config "../../tailwind.config.ts";
+@import "tailwindcss";
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+@theme {
+  --color-foreground-normal: #f1f7fe;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-  .text-foreground-normal {
-    color: #f1f7fe;
-  }
-}
-
-::selection {
-  background: #2a2c31;
-  color: #999999;
-}
+/* 
+body,
+p {
+  font-family: Satoshi, Helvetica, sans-serif;
+} */
 
 @layer base {
   :root {
@@ -67,11 +58,7 @@ body {
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+::selection {
+  background: #2a2c31;
+  color: #999999;
 }

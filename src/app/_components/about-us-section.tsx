@@ -13,7 +13,7 @@ export function AboutUsSection() {
             <Heading className="text-center lg:text-left text-4xl md:text-6xl mb-6">About us</Heading>
           </BlurFade>
           <BlurFade delay={0.5} yOffset={10}>
-            <p className="text-xl tracking-wide mb-8">
+            <p className="text-xl tracking-wide mb-8 text-foreground">
               At devfik, we build <span className="text-foreground-normal">bespoke digital solutions</span> that elevate
               your business. From <span className="text-foreground-normal">sleek websites</span> to powerful custom
               software and <span className="text-foreground-normal">seamless mobile experiences</span>, we deliver

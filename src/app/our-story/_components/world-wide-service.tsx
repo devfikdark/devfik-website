@@ -27,7 +27,7 @@ export function WorldWideService() {
     <div className="mt-32 lg:mt-60 container max-w-6xl mx-auto px-4">
       <BlurFade delay={0.25} yOffset={10}>
         <Heading className="text-center text-4xl md:text-6xl">Our Global Reach</Heading>
-        <p className="text-center text-lg mt-4 tracking-wide max-w-4xl mx-auto">
+        <p className="text-center text-lg mt-4 tracking-wide max-w-4xl mx-auto text-foreground">
           From Asia to Europe, our services span the globe. We're proud to deliver cutting-edge solutions to clients
           across continents, bridging distances with technology.
         </p>
@@ -38,7 +38,7 @@ export function WorldWideService() {
           <h3 className="text-2xl font-semibold mb-4 text-foreground-normal">Countries We Serve</h3>
           <ul className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             {countries.map((country, index) => (
-              <li key={index} className="text-md">
+              <li key={index} className="text-md text-foreground">
                 {country}
               </li>
             ))}

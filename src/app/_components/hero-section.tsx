@@ -12,8 +12,8 @@ const words = ["Shape The Future", "Drive Innovation", "Empower Business", "Simp
 
 export function HeroSection() {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-gradient-to-b from-background to-background/80">
-      <div className="container pt-20 lg:pt-0 min-h-screen flex flex-col-reverse lg:flex-row items-center justify-between relative z-10">
+    <div className="relative min-h-screen overflow-hidden bg-linear-gradient(to bottom, #000000, #1a1a1a) container mx-auto">
+      <div className="pt-20 lg:pt-0 min-h-screen flex flex-col-reverse lg:flex-row items-center justify-between relative z-10">
         <div className="w-full lg:w-1/2 z-10 mb-8 lg:mb-0">
           <BlurFade delay={0.25} yOffset={10}>
             <Heading className="text-4xl md:text-5xl font-bold">

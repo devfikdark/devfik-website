@@ -43,8 +43,8 @@ export function TeamSection() {
                 </div>
                 <div className="mt-4">
                   <h3 className="text-xl font-semibold text-foreground-normal">{member.name}</h3>
-                  <p>{member.role}</p>
-                  <p className="mt-2 text-sm">{member.bio}</p>
+                  <p className="text-foreground">{member.role}</p>
+                  <p className="mt-2 text-sm text-foreground">{member.bio}</p>
                 </div>
               </div>
             </BlurFade>

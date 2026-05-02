@@ -39,18 +39,30 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="md:ml-auto flex flex-col sm:flex-row gap-8">
+          <div className="md:ml-auto flex flex-col sm:flex-row gap-8 text-foreground">
             <div className="flex flex-col gap-2">
               <h3 className="text-lg font-medium text-foreground-normal">Company</h3>
-              <Link href="/">Index</Link>
-              <Link href="/our-work">Our Work</Link>
-              <Link href="/our-story">Our Story</Link>
-              <Link href="/contact-us">Contact Us</Link>
-              <Link href="/privacy-policy">Privacy Policy</Link>
+              <Link className="hover:text-primary" href="/">
+                Index
+              </Link>
+              <Link className="hover:text-primary" href="/our-work">
+                Our Work
+              </Link>
+              <Link className="hover:text-primary" href="/our-story">
+                Our Story
+              </Link>
+              <Link className="hover:text-primary" href="/contact-us">
+                Contact Us
+              </Link>
+              <Link className="hover:text-primary" href="/privacy-policy">
+                Privacy Policy
+              </Link>
             </div>
             <div className="flex flex-col gap-2">
               <h3 className="text-lg font-medium text-foreground-normal">Legal</h3>
-              <Link href="/privacy-policy">Privacy Policy</Link>
+              <Link className="hover:text-primary" href="/privacy-policy">
+                Privacy Policy
+              </Link>
             </div>
           </div>
         </div>

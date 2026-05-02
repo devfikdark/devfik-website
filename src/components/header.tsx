@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, Variants } from "motion/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -68,7 +68,7 @@ export function Header() {
         transition={{ duration: 0.3 }}>
         <div className="max-w-6xl w-full px-4">
           <div className="flex items-center justify-between h-14">
-            <div className="flex-shrink-0">
+            <div className="shrink-0">
               <Link className="text-primary font-bold text-xl" href="/">
                 <picture>
                   <img alt="Logo" height={40} src="/images/white_logo_full.png" width={120} />
@@ -107,9 +107,9 @@ export function Header() {
             className="fixed inset-0 bg-card z-50 flex flex-col backdrop-blur-md"
             exit="exit"
             initial="hidden"
-            variants={menuVariants}>
+            variants={menuVariants as Variants}>
             <div className="flex justify-between items-center px-4 py-2">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <Link className="text-foreground-normal text-xl" href="/" onClick={() => setIsMenuOpen(false)}>
                   <picture>
                     <img alt="Logo" height={40} src="/images/white_logo_full.png" width={120} />

@@ -15,12 +15,12 @@ export default function OurStory() {
         </BlurFade>
 
         <BlurFade delay={0.25} yOffset={20}>
-          <p className="text-lg">
+          <p className="text-lg text-foreground">
             Founded in 2020, devfik emerged from a shared vision to revolutionize the digital landscape. What began as a
             small team of passionate developers has grown into a dynamic force in the tech industry, driven by our
             commitment to innovation and excellence.
           </p>
-          <p className="mt-4 text-lg">
+          <p className="mt-4 text-lg text-foreground">
             At devfik, we're not just building software; we're shaping the future of digital experiences. We envision a
             world where technology seamlessly enhances human potential, and we're committed to making that vision a
             reality, one project at a time.
