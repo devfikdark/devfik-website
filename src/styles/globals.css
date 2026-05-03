@@ -1,60 +1,145 @@
-/* Tailwind v4: legacy theme tokens (e.g. bg-primary) live in tailwind.config.ts — load it explicitly. */
-@config "../../tailwind.config.ts";
 @import "tailwindcss";
 
-@theme {
-  --color-foreground-normal: #f1f7fe;
-}
-/* 
-body,
-p {
-  font-family: Satoshi, Helvetica, sans-serif;
-} */
+/* Tailwind v4 doesn't ship a `dark:` variant for the `.dark` class by default
+   (only `prefers-color-scheme`). Re-create the v3 behaviour: any element with
+   a `.dark` class — or any descendant of one — opts into dark utilities. */
+@custom-variant dark (&:where(.dark, .dark *));
 
-@layer base {
-  :root {
-    --background: 36 33% 98%;
-    --foreground: 36 55% 5%;
-    --muted: 216 0% 90.09%;
-    --muted-foreground: 216 5% 29%;
-    --popover: 36 33% 98%;
-    --popover-foreground: 36 55% 5%;
-    --card: 36 33% 98%;
-    --card-foreground: 36 55% 5%;
-    --border: 36 7% 93%;
-    --input: 36 7% 93%;
-    --primary: 24.58 94.98% 53.14%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 220 12.24% 19.22%;
-    --secondary-foreground: 216 49.09% 45.63%;
-    --accent: 216 84% 28%;
-    --accent-foreground: 216 84% 88%;
-    --destructive: 16 80% 41%;
-    --destructive-foreground: 0 0% 100%;
-    --ring: 36 84% 28%;
-    --radius: 0.5rem;
+/* ---------------------------------------------------------------- *
+ * Design tokens — light theme                                       *
+ * Kept as raw HSL channels so opacity modifiers (bg-primary/50)     *
+ * keep working through `hsl(var(--token) / <alpha-value>)`.         *
+ * ---------------------------------------------------------------- */
+:root {
+  --background: 36 33% 98%;
+  --foreground: 36 55% 5%;
+  --muted: 216 0% 90.09%;
+  --muted-foreground: 216 5% 29%;
+  --popover: 36 33% 98%;
+  --popover-foreground: 36 55% 5%;
+  --card: 36 33% 98%;
+  --card-foreground: 36 55% 5%;
+  --border: 36 7% 93%;
+  --input: 36 7% 93%;
+  --primary: 24.58 94.98% 53.14%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 220 12.24% 19.22%;
+  --secondary-foreground: 216 49.09% 45.63%;
+  --accent: 216 84% 28%;
+  --accent-foreground: 216 84% 88%;
+  --destructive: 16 80% 41%;
+  --destructive-foreground: 0 0% 100%;
+  --ring: 36 84% 28%;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 0 5.26% 3.73%;
+  --foreground: 0 0% 60%;
+  --muted: 216 33% 9%;
+  --muted-foreground: 216 5% 71%;
+  --popover: 36 31% 2%;
+  --popover-foreground: 36 25% 97%;
+  --card: 220 8.11% 7.25%;
+  --card-foreground: 0 0% 60%;
+  --border: 36 7% 13%;
+  --input: 36 7% 13%;
+  --primary: 24.58 94.98% 53.14%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 220 12.24% 19.22%;
+  --secondary-foreground: 27.22 0% 87.52%;
+  --accent: 220 8.11% 7.25%;
+  --accent-foreground: 216 84% 88%;
+  --destructive: 16 80% 54%;
+  --destructive-foreground: 0 0% 0%;
+  --ring: 36 84% 28%;
+}
+
+/* ---------------------------------------------------------------- *
+ * Tailwind v4 theme — registers the design tokens above as utility *
+ * classes (bg-primary, text-foreground, border-border, etc.).      *
+ * `inline` resolves `var()` at build time so opacity modifiers     *
+ * work correctly on every utility.                                 *
+ * ---------------------------------------------------------------- */
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-foreground-normal: #f1f7fe;
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --color-chart-1: hsl(var(--chart-1));
+  --color-chart-2: hsl(var(--chart-2));
+  --color-chart-3: hsl(var(--chart-3));
+  --color-chart-4: hsl(var(--chart-4));
+  --color-chart-5: hsl(var(--chart-5));
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+
+  /* Match the v3 config that capped 2xl at 1400px (default v4 is 1536px). */
+  --breakpoint-2xl: 1400px;
+
+  /* Marquee animations — duration & gap are set per-instance via inline
+     CSS variables (see components/marquee.tsx). */
+  --animate-marquee: marquee var(--duration) linear infinite;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
   }
 
-  .dark {
-    --background: 0 5.26% 3.73%;
-    --foreground: 0 0% 60%;
-    --muted: 216 33% 9%;
-    --muted-foreground: 216 5% 71%;
-    --popover: 36 31% 2%;
-    --popover-foreground: 36 25% 97%;
-    --card: 220 8.11% 7.25%;
-    --card-foreground: 0 0% 60%;
-    --border: 36 7% 13%;
-    --input: 36 7% 13%;
-    --primary: 24.58 94.98% 53.14%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 220 12.24% 19.22%;
-    --secondary-foreground: 27.22 0% 87.52%;
-    --accent: 220 8.11% 7.25%;
-    --accent-foreground: 216 84% 88%;
-    --destructive: 16 80% 54%;
-    --destructive-foreground: 0 0% 0%;
-    --ring: 36 84% 28%;
+  @keyframes marquee-vertical {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
+}
+
+/* Restore the v3 `container` defaults: centered + 1rem padding.
+   v4 strips these by default, so we add them back as a custom utility. */
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+/* Set the default body text color from the theme so components without an
+   explicit text color (e.g. <Label>) don't fall back to browser black. */
+@layer base {
+  body {
+    color: hsl(var(--foreground));
   }
 }
 

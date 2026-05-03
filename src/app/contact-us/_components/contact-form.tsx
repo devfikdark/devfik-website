@@ -16,7 +16,7 @@ export const formSchema = z.object({
   name: z.string().min(2, {
     message: "Name must be at least 2 characters.",
   }),
-  email: z.string().email({
+  email: z.email({
     message: "Invalid email address.",
   }),
   subject: z.string().min(1, {
